@@ -19,25 +19,25 @@ public class Tester {
         List<String> orderFiles = new ArrayList<String>();
         List<String> storePath = new ArrayList<String>();
 
-        buyerFiles.add("~/tb/buyer.0.0");
-        buyerFiles.add("~/tb/buyer.1.1");
-        goodFiles.add("~/tb/good.0.0");
-        goodFiles.add("~/tb/good.1.1");
-        goodFiles.add("~/tb/good.2.2");
-        orderFiles.add("~/tb/order.2.2");
-        orderFiles.add("~/tb/order.1.1");
-        orderFiles.add("~/tb/order.0.3");
-        orderFiles.add("~/tb/order.0.0");
+        buyerFiles.add("/home/hadoop/tb/buyer.0.0");
+        buyerFiles.add("/home/hadoop/tb/buyer.1.1");
+        goodFiles.add("/home/hadoop/tb/good.0.0");
+        goodFiles.add("/home/hadoop/tb/good.1.1");
+        goodFiles.add("/home/hadoop/tb/good.2.2");
+        orderFiles.add("/home/hadoop/tb/order.2.2");
+        orderFiles.add("/home/hadoop/tb/order.1.1");
+        orderFiles.add("/home/hadoop/tb/order.0.3");
+        orderFiles.add("/home/hadoop/tb/order.0.0");
 
-        storePath.add("~/store");
+        storePath.add("/home/hadoop/store/");
 
         OrderSystem os = new OrderSystemImpl();
         try {
-            long start = System.nanoTime();
+            long start = System.currentTimeMillis();;
             os.construct(orderFiles, buyerFiles, goodFiles, storePath);
 
-            long end = System.nanoTime();
-            System.out.println("-- Constructing takes "+(end -start) +" ns");
+            long end = System.currentTimeMillis();;
+            System.out.println("-- Constructing takes "+(end -start) +" ms");
 
             // 用例
             long orderid = 609670049;
@@ -64,25 +64,36 @@ public class Tester {
                 System.out.println(1111 + " order not exist");
             }
 
-            String buyerid = "tb_a99a7956-974d-459f-bb09-b7df63ed3b80";
-            long startTime = 1471025622;
-            long endTime = 1471219509;
+            String buyerid = "wx-a0e0-6bda77db73ca";
+            long startTime =1462018520; 
+            long endTime = 1473999229;
             System.out.println("\n查询买家ID为" + buyerid + "的一定时间范围内的订单");
             Iterator<OrderSystem.Result> it = os.queryOrdersByBuyer(startTime, endTime, buyerid);
             while (it.hasNext()) {
                 System.out.println(it.next());
             }
 
-            String goodid = "good_842195f8-ab1a-4b09-a65f-d07bdfd8f8ff";
+            String goodid = "gd-b972-6926df8128c3";
             String salerid = "almm_47766ea0-b8c0-4616-b3c8-35bc4433af13";
             System.out.println("\n查询商品id为" + goodid + "，商家id为" + salerid + "的订单");
-            it = os.queryOrdersBySaler(salerid, goodid, new ArrayList<String>());
+		queryingKeys.clear();
+		queryingKeys.add("a_o_30709a_g_32587");
+            it = os.queryOrdersBySaler(salerid, goodid, queryingKeys);
+            while (it.hasNext()) {
+                System.out.println(it.next());
+            }
+	goodid = "gd-80fa-bc88216aa5be";
+            System.out.println("\n查询商品id为" + goodid + "，商家id为" + salerid + "的订单");
+		queryingKeys.clear();
+		queryingKeys.add("address");
+            it = os.queryOrdersBySaler(salerid, goodid, queryingKeys);
             while (it.hasNext()) {
                 System.out.println(it.next());
             }
 
-            goodid = "good_d191eeeb-fed1-4334-9c77-3ee6d6d66aff";
-            String attr = "app_order_33_0";
+
+            goodid = "aye-9c37-838aa50d1f1e";
+            String attr = "a_g_5814";
             System.out.println("\n对商品id为" + goodid + "的 " + attr + "字段求和");
             System.out.println(os.sumOrdersByGood(goodid, attr));
 
