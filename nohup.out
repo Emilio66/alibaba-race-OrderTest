@@ -1,0 +1,250 @@
+------------------------SYSTEM INFO --------------------------
+Order File:  
+/home/hadoop/tb/order.2.2
+path: /home/hadoop/tb/order.2.2 size: 36947033
+/home/hadoop/tb/order.1.1
+path: /home/hadoop/tb/order.1.1 size: 14039972
+/home/hadoop/tb/order.0.3
+path: /home/hadoop/tb/order.0.3 size: 26805149
+/home/hadoop/tb/order.0.0
+path: /home/hadoop/tb/order.0.0 size: 10991273
+
+Buyer File:  
+/home/hadoop/tb/buyer.0.0
+path: /home/hadoop/tb/buyer.0.0 size: 1048785
+/home/hadoop/tb/buyer.1.1
+path: /home/hadoop/tb/buyer.1.1 size: 1007312
+
+Good File:  
+/home/hadoop/tb/good.0.0
+path: /home/hadoop/tb/good.0.0 size: 1386861
+/home/hadoop/tb/good.1.1
+path: /home/hadoop/tb/good.1.1 size: 1625691
+/home/hadoop/tb/good.2.2
+path: /home/hadoop/tb/good.2.2 size: 688283
+
+Store path:  
+/home/hadoop/store/
+path: /home/hadoop/store size: 4096
+Usable space: 472874868736
+subpath: /home/hadoop/store/1test size: 4096
+subpath: /home/hadoop/store/good_0 size: 3145728
+subpath: /home/hadoop/store/good_1 size: 3145728
+subpath: /home/hadoop/store/good_2 size: 3145728
+subpath: /home/hadoop/store/buyer_0 size: 3145728
+subpath: /home/hadoop/store/buyer_1 size: 3145728
+subpath: /home/hadoop/store/buyer_2 size: 3145728
+subpath: /home/hadoop/store/order_0 size: 20971520
+subpath: /home/hadoop/store/order_1 size: 20971520
+subpath: /home/hadoop/store/order_2 size: 20971520
+subpath: /home/hadoop/store/order_3 size: 20971520
+subpath: /home/hadoop/store/order_4 size: 20971520
+subpath: /home/hadoop/store/order_5 size: 20971520
+subpath: /home/hadoop/store/order_6 size: 20971520
+
+Store name: ' /dev/mapper/centos-home ' ; type : xfs
+Total space in VOLUME: 478193872896
+Free space in VOLUME: 472874868736
+Max memory: 1836056576
+Total memory: 123731968
+Free memory: 122431496
+Available processors: 4
+-------------------------- Parsing --------------------------
+ Parsing buyer files: 2 , store at /home/hadoop/store/
+1ms elapsed for buyer files.
+ Begin Parsing good files: 3 , store at /home/hadoop/store/
+1ms elapsed for good & buyer files. Parsing order files: 4 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/good_0 , Position: 1114116
+---- Bucket Clean Thread: /home/hadoop/store/good_1 , Position: 1334818
+---- Bucket Clean Thread: /home/hadoop/store/good_2 , Position: 1251901
+178ms elapsed for good files parsing 3 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/buyer_0 , Position: 701656
+---- Bucket Clean Thread: /home/hadoop/store/buyer_1 , Position: 677515
+---- Bucket Clean Thread: /home/hadoop/store/buyer_2 , Position: 676926
+221ms elapsed for buyer files parsing 2 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/order_0 , Position: 12560607
+---- Bucket Clean Thread: /home/hadoop/store/order_1 , Position: 12603973
+---- Bucket Clean Thread: /home/hadoop/store/order_2 , Position: 12712653
+---- Bucket Clean Thread: /home/hadoop/store/order_3 , Position: 12766472
+---- Bucket Clean Thread: /home/hadoop/store/order_4 , Position: 12748538
+---- Bucket Clean Thread: /home/hadoop/store/order_5 , Position: 12731863
+---- Bucket Clean Thread: /home/hadoop/store/order_6 , Position: 12659321
+1905008327ns elapsed for good files parsing 4 , store at /home/hadoop/store/
+1908ms elapsed for Constructing all files.
+ -----------  Parsing END -----------
+/home/hadoop/store/
+path: /home/hadoop/store size: 4096
+Usable space: 472874868736
+subpath: /home/hadoop/store/1test size: 4096
+subpath: /home/hadoop/store/good_0 size: 3145728
+subpath: /home/hadoop/store/good_1 size: 3145728
+subpath: /home/hadoop/store/good_2 size: 3145728
+subpath: /home/hadoop/store/buyer_0 size: 3145728
+subpath: /home/hadoop/store/buyer_1 size: 3145728
+subpath: /home/hadoop/store/buyer_2 size: 3145728
+subpath: /home/hadoop/store/order_0 size: 20971520
+subpath: /home/hadoop/store/order_1 size: 20971520
+subpath: /home/hadoop/store/order_2 size: 20971520
+subpath: /home/hadoop/store/order_3 size: 20971520
+subpath: /home/hadoop/store/order_4 size: 20971520
+subpath: /home/hadoop/store/order_5 size: 20971520
+subpath: /home/hadoop/store/order_6 size: 20971520
+
+
+ ---------- After Constructing: -----------
+Total memory: 814743552
+Free memory: 751367264
+-- Constructing takes 2064 ms
+-------------- Query Start ------------------
+New Parser: case.0, start 0
+OrderQuery 0 , id = 609670049, Keys: 
+609670049 - description;
+====Order Query: 1 ms , id = 609670049 ==== MyResult orderid: 609670049 {[description]:阿克肖年科鄱阳湖区实习员超群至此乌克兰国防部：义兴寨依曼碑头天府早报前挽后推}
+OrderQuery 1 , id = 612584687, Keys: 
+612584687 - contactphone;
+====Order Query: 0 ms , id = 612584687 ==== MyResult orderid: 612584687 {[contactphone]:+5023796133455}
+OrderQuery 2 , id = 627040903, Keys: 
+627040903 - salerid;
+====Order Query: 0 ms , id = 627040903 ==== MyResult orderid: 627040903 {[salerid]:wx-b21b-a2c7e98b5929}
+SumOrderQuery 0 , good id = al-96e5-7fac3721d4b9 , key= amount
+== Sum Query : 5 ms, Long: 845 , good id = al-96e5-7fac3721d4b9
+OrderQuery 3 , id = 608178205, Keys: 
+608178205 - a_g_17779;
+====Order Query: 0 ms , id = 608178205 ==== MyResult orderid: 608178205 {[a_g_17779]:false}
+SumOrderQuery 1 , good id = aye-9c37-838aa50d1f1e , key= a_g_5814
+== Sum Query : 14 ms, Long: 234 , good id = aye-9c37-838aa50d1f1e
+OrderQuery 4 , id = 611435247, Keys: 
+611435247 - a_o_7517;
+====Order Query: 0 ms , id = 611435247 ==== MyResult orderid: 611435247 {}
+OrderQuery 5 , id = 609423376, Keys: 
+609423376 - buyername;
+====Order Query: 0 ms , id = 609423376 ==== MyResult orderid: 609423376 {[buyername]:丰藜瑭}
+OrderQuery 6 , id = 590107063, Keys: 
+590107063 - a_g_12146;
+====Order Query: 0 ms , id = 590107063 ==== MyResult orderid: 590107063 {}
+TimePeriod Buyer's Orders 0 , buyer id = wx-a0e0-6bda77db73ca, time: 1462018520-1473999229
+======= TimePeriod query: 5 ms , buyer id = wx-a0e0-6bda77db73ca ===== MyResult List + resultList + ; size: 19
+OrderQuery 7 , id = 593383708, Keys: 
+593383708 - a_o_5497;
+====Order Query: 1 ms , id = 593383708 ==== MyResult orderid: 593383708 {}
+SumOrderQuery 2 , good id = al-9c4c-ac9ed4b6ad35 , key= offprice
+--Type Error : key offprice, raw value: 3322.340796622774, is long: false , Error: java.lang.NumberFormatException: For input string: "3322.340796622774"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 21 ms, Double: 235886.19656021666 , good id = al-9c4c-ac9ed4b6ad35
+Good-Saler all orders 0 , good id: gd-b972-6926df8128c3  keys: 
+gd-b972-6926df8128c3 - a_o_30709a_g_32587;
+==Good-Saler all orders: 10 ms, , good id = gd-b972-6926df8128c3; + resultList + ; size: 56
+OrderQuery 8 , id = 607315730, Keys: 
+607315730 - a_b_11255;
+====Order Query: 0 ms , id = 607315730 ==== MyResult orderid: 607315730 {}
+SumOrderQuery 3 , good id = dd-a27d-835565dfb080 , key= a_b_3503
+--Type Error : key a_b_3503, raw value: 0.725, is long: false , Error: java.lang.NumberFormatException: For input string: "0.725"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 56 ms, Double: 0.915 , good id = dd-a27d-835565dfb080
+Good-Saler all orders 1 , good id: gd-80fa-bc88216aa5be  keys: 
+gd-80fa-bc88216aa5be - address;
+==Good-Saler all orders: 25 ms, , good id = gd-80fa-bc88216aa5be; + resultList + ; size: 235
+Good-Saler all orders 2 , good id: al-a63c-e1e294d6bcb1  keys: 
+al-a63c-e1e294d6bcb1 - buyername;
+==Good-Saler all orders: 6 ms, , good id = al-a63c-e1e294d6bcb1; + resultList + ; size: 62
+TimePeriod Buyer's Orders 1 , buyer id = tp-a20e-8248d4665332, time: 1470285742-1478898941
+======= TimePeriod query: 5 ms , buyer id = tp-a20e-8248d4665332 ===== MyResult List + resultList + ; size: 33
+OrderQuery 9 , id = 588664537, Keys: 
+588664537 - a_o_22304;
+====Order Query: 0 ms , id = 588664537 ==== MyResult orderid: 588664537 {[a_o_22304]:-0.41}
+SumOrderQuery 4 , good id = dd-941e-7fc422e8afc6 , key= a_b_31770
+== Sum Query : 7 ms, Long: 2227048788 , good id = dd-941e-7fc422e8afc6
+OrderQuery 10 , id = 592593591, Keys: 
+592593591 - a_o_18278;
+====Order Query: 0 ms , id = 592593591 ==== MyResult orderid: 592593591 {}
+SumOrderQuery 5 , good id = aye-a8da-815f1b1f77a0 , key= a_o_22304
+--Type Error : key a_o_22304, raw value: 0.813, is long: false , Error: java.lang.NumberFormatException: For input string: "0.813"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 5 ms, Double: 4.5833 , good id = aye-a8da-815f1b1f77a0
+OrderQuery 11 , id = 605697086, Keys: 
+605697086 - a_b_30900;
+====Order Query: 0 ms , id = 605697086 ==== MyResult orderid: 605697086 {}
+OrderQuery 12 , id = 589612270, Keys: 
+589612270 - a_b_20445;
+====Order Query: 1 ms , id = 589612270 ==== MyResult orderid: 589612270 {}
+SumOrderQuery 6 , good id = dd-8ca3-2bc2afdd8802 , key= a_b_22322
+--Type Error : key a_b_22322, raw value: 919348.618, is long: false , Error: java.lang.NumberFormatException: For input string: "919348.618"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 6 ms, Double: 2693435.2904000003 , good id = dd-8ca3-2bc2afdd8802
+OrderQuery 13 , id = 625705444, Keys: 
+625705444 - orderid;
+====Order Query: 0 ms , id = 625705444 ==== MyResult orderid: 625705444 {[orderid]:625705444}
+Good-Saler all orders 3 , good id: al-bba5-9856daeafce1  keys: 
+al-bba5-9856daeafce1 - buyerid;
+==Good-Saler all orders: 9 ms, , good id = al-bba5-9856daeafce1; + resultList + ; size: 144
+Good-Saler all orders 4 , good id: aye-8837-3aca358bfad3  keys: 
+aye-8837-3aca358bfad3 - a_o_12490;
+==Good-Saler all orders: 5 ms, , good id = aye-8837-3aca358bfad3; + resultList + ; size: 55
+OrderQuery 14 , id = 590939373, Keys: 
+590939373 - a_b_32675;
+====Order Query: 0 ms , id = 590939373 ==== MyResult orderid: 590939373 {}
+Good-Saler all orders 5 , good id: aye-a12d-a8a02bf3d6db  keys: 
+aye-a12d-a8a02bf3d6db - a_o_30709;
+==Good-Saler all orders: 8 ms, , good id = aye-a12d-a8a02bf3d6db; + resultList + ; size: 59
+OrderQuery 15 , id = 591628866, Keys: 
+591628866 - a_b_30900;
+====Order Query: 0 ms , id = 591628866 ==== MyResult orderid: 591628866 {}
+TimePeriod Buyer's Orders 2 , buyer id = ap-b5a0-67275022beac, time: 1466989179-1484696090
+======= TimePeriod query: 4 ms , buyer id = ap-b5a0-67275022beac ===== MyResult List + resultList + ; size: 34
+OrderQuery 16 , id = 610847057, Keys: 
+610847057 - a_o_28730;
+====Order Query: 0 ms , id = 610847057 ==== MyResult orderid: 610847057 {}
+OrderQuery 17 , id = 607797352, Keys: 
+607797352 - buyerid;
+====Order Query: 0 ms , id = 607797352 ==== MyResult orderid: 607797352 {[buyerid]:ap-b452-008d8696ed28}
+OrderQuery 18 , id = 610303538, Keys: 
+610303538 - price;
+====Order Query: 0 ms , id = 610303538 ==== MyResult orderid: 610303538 {[price]:1957.8470838906796}
+OrderQuery 19 , id = 590835445, Keys: 
+590835445 - a_b_19123;
+====Order Query: 0 ms , id = 590835445 ==== MyResult orderid: 590835445 {[a_b_19123]:913105e5-4dfe-4531-aa47-b833b1488b55}
+OrderQuery 20 , id = 609702347, Keys: 
+609702347 - amount;
+====Order Query: 0 ms , id = 609702347 ==== MyResult orderid: 609702347 {[amount]:18}
+OrderQuery 21 , id = 610406037, Keys: 
+610406037 - donebuyerid;
+====Order Query: 1 ms , id = 610406037 ==== MyResult orderid: 610406037 {}
+OrderQuery 22 , id = 608432847, Keys: 
+608432847 - a_g_14195;
+====Order Query: 0 ms , id = 608432847 ==== MyResult orderid: 608432847 {}
+TimePeriod Buyer's Orders 3 , buyer id = tp-89c2-0a07ea42f9c3, time: 1479428641-1481958725
+======= TimePeriod query: 1 ms , buyer id = tp-89c2-0a07ea42f9c3 ===== MyResult List + resultList + ; size: 0
+TimePeriod Buyer's Orders 4 , buyer id = wx-9d71-9e8d3ad64d2a, time: 1458715441-1486968261
+======= TimePeriod query: 5 ms , buyer id = wx-9d71-9e8d3ad64d2a ===== MyResult List + resultList + ; size: 34
+OrderQuery 23 , id = 607726953, Keys: 
+607726953 - a_g_24863;
+====Order Query: 0 ms , id = 607726953 ==== MyResult orderid: 607726953 {}
+OrderQuery 24 , id = 608153033, Keys: 
+608153033 - a_o_9238;
+====Order Query: 0 ms , id = 608153033 ==== MyResult orderid: 608153033 {}
+TimePeriod Buyer's Orders 5 , buyer id = ap-936f-ca800485bc15, time: 1462588843-1462780066
+======= TimePeriod query: 2 ms , buyer id = ap-936f-ca800485bc15 ===== MyResult List + resultList + ; size: 0
+Good-Saler all orders 6 , good id: dd-892b-e6f4e358d986  keys: 
+dd-892b-e6f4e358d986 - a_b_30900pricea_b_6984salerida_g_32587;
+==Good-Saler all orders: 8 ms, , good id = dd-892b-e6f4e358d986; + resultList + ; size: 50
+Good-Saler all orders 7 , good id: dd-9cef-9771a79d660f  keys: 
+dd-9cef-9771a79d660f - a_b_26525;
+==Good-Saler all orders: 7 ms, , good id = dd-9cef-9771a79d660f; + resultList + ; size: 53
+OrderQuery 25 , id = 608357645, Keys: 
+608357645 - a_g_8700;
+====Order Query: 0 ms , id = 608357645 ==== MyResult orderid: 608357645 {}
+Good-Saler all orders 8 , good id: gd-9099-6d8efdcefa00  keys: 
+gd-9099-6d8efdcefa00 - a_o_5449;
+==Good-Saler all orders: 7 ms, , good id = gd-9099-6d8efdcefa00; + resultList + ; size: 47
+TimePeriod Buyer's Orders 6 , buyer id = tp-b0a2-fd0ca6720971, time: 1467791748-1481816836
+java.io.FileNotFoundException: /home/hadoop/store/buyer_0 (Too many open files)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at com.alibaba.middleware.race.util.FastReader.prepare(FastReader.java:32)
+	at com.alibaba.middleware.race.util.FastReader.<init>(FastReader.java:26)
+	at com.alibaba.middleware.race.OrderSystemImpl.queryOrdersByBuyer(OrderSystemImpl.java:697)
+	at Tester.main(Tester.java:71)
+Exception in thread "main" java.lang.NullPointerException
+	at com.alibaba.middleware.race.util.FastReader.nextLine(FastReader.java:69)
+	at com.alibaba.middleware.race.OrderSystemImpl.queryOrdersByBuyer(OrderSystemImpl.java:698)
+	at Tester.main(Tester.java:71)

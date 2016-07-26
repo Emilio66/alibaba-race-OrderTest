@@ -53,6 +53,8 @@ public class Tester {
                 }
                 List<Query> queries = new Parser(caseFile).generateQueries(num);
 
+ 		start = System.currentTimeMillis();
+
                 for(Query query : queries){
                     switch (query.Type){
 
@@ -76,6 +78,8 @@ public class Tester {
                     }
 
                 }
+ 		end = System.currentTimeMillis();
+		System.out.println(num+" queries  takes " + (end - start) + " ms ---");
             }else {
                 System.out.println("--- static query----");
                 // 用例

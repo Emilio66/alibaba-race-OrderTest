@@ -135,11 +135,17 @@ public class Parser {
     }
 
     public static void main(String [] args){
-        List<Query> queryList = new Parser(new File("case.txt")).getAllQueries();
+	long start = System.currentTimeMillis();
+	String filename="case.txt";
+	if(args.length > 0)
+		filename = args[0];
+        List<Query> queryList = new Parser(new File(filename)).getAllQueries();
 
         int n = 0;
         for (Query query : queryList){
             System.out.println((n++)+" : "+query);
         }
+	long end = System.currentTimeMillis();
+	System.out.println("Parsing case takes: "+(end - start) +" ms");
     }
 }
