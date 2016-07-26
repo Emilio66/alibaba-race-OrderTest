@@ -1,0 +1,824 @@
+2016-07-26 21:14:56
+------------------------SYSTEM INFO --------------------------
+Order File:  
+/home/hadoop/tb/order.2.2
+path: /home/hadoop/tb/order.2.2 size: 36947033
+/home/hadoop/tb/order.1.1
+path: /home/hadoop/tb/order.1.1 size: 14039972
+/home/hadoop/tb/order.0.3
+path: /home/hadoop/tb/order.0.3 size: 26805149
+/home/hadoop/tb/order.0.0
+path: /home/hadoop/tb/order.0.0 size: 10991273
+
+Buyer File:  
+/home/hadoop/tb/buyer.0.0
+path: /home/hadoop/tb/buyer.0.0 size: 1048785
+/home/hadoop/tb/buyer.1.1
+path: /home/hadoop/tb/buyer.1.1 size: 1007312
+
+Good File:  
+/home/hadoop/tb/good.0.0
+path: /home/hadoop/tb/good.0.0 size: 1386861
+/home/hadoop/tb/good.1.1
+path: /home/hadoop/tb/good.1.1 size: 1625691
+/home/hadoop/tb/good.2.2
+path: /home/hadoop/tb/good.2.2 size: 688283
+
+Store path:  
+/home/hadoop/store/
+path: /home/hadoop/store size: 4096
+Usable space: 472871231488
+subpath: /home/hadoop/store/1test size: 4096
+subpath: /home/hadoop/store/good_0 size: 3145728
+subpath: /home/hadoop/store/good_1 size: 3145728
+subpath: /home/hadoop/store/good_2 size: 3145728
+subpath: /home/hadoop/store/buyer_0 size: 3145728
+subpath: /home/hadoop/store/buyer_1 size: 3145728
+subpath: /home/hadoop/store/buyer_2 size: 3145728
+subpath: /home/hadoop/store/order_0 size: 20971520
+subpath: /home/hadoop/store/order_1 size: 20971520
+subpath: /home/hadoop/store/order_2 size: 20971520
+subpath: /home/hadoop/store/order_3 size: 20971520
+subpath: /home/hadoop/store/order_4 size: 20971520
+subpath: /home/hadoop/store/order_5 size: 20971520
+subpath: /home/hadoop/store/order_6 size: 20971520
+
+Store name: ' /dev/mapper/centos-home ' ; type : xfs
+Total space in VOLUME: 478193872896
+Free space in VOLUME: 472871231488
+Max memory: 1836056576
+Total memory: 123731968
+Free memory: 121781296
+Available processors: 4
+-------------------------- Parsing --------------------------
+ Parsing buyer files: 2 , store at /home/hadoop/store/
+1ms elapsed for buyer files.
+ Begin Parsing good files: 3 , store at /home/hadoop/store/
+1ms elapsed for good & buyer files. Parsing order files: 4 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/good_0 , Position: 1114116
+---- Bucket Clean Thread: /home/hadoop/store/good_1 , Position: 1334818
+---- Bucket Clean Thread: /home/hadoop/store/good_2 , Position: 1251901
+195ms elapsed for good files parsing 3 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/buyer_0 , Position: 701656
+---- Bucket Clean Thread: /home/hadoop/store/buyer_1 , Position: 677515
+---- Bucket Clean Thread: /home/hadoop/store/buyer_2 , Position: 676926
+283ms elapsed for buyer files parsing 2 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/order_0 , Position: 12560607
+---- Bucket Clean Thread: /home/hadoop/store/order_1 , Position: 12603973
+---- Bucket Clean Thread: /home/hadoop/store/order_2 , Position: 12712653
+---- Bucket Clean Thread: /home/hadoop/store/order_3 , Position: 12766472
+---- Bucket Clean Thread: /home/hadoop/store/order_4 , Position: 12748538
+---- Bucket Clean Thread: /home/hadoop/store/order_5 , Position: 12731863
+---- Bucket Clean Thread: /home/hadoop/store/order_6 , Position: 12659321
+1760047689ns elapsed for good files parsing 4 , store at /home/hadoop/store/
+2502ms elapsed for Constructing all files.
+ -----------  Parsing END -----------
+/home/hadoop/store/
+path: /home/hadoop/store size: 4096
+Usable space: 472871231488
+subpath: /home/hadoop/store/1test size: 4096
+subpath: /home/hadoop/store/good_0 size: 3145728
+subpath: /home/hadoop/store/good_1 size: 3145728
+subpath: /home/hadoop/store/good_2 size: 3145728
+subpath: /home/hadoop/store/buyer_0 size: 3145728
+subpath: /home/hadoop/store/buyer_1 size: 3145728
+subpath: /home/hadoop/store/buyer_2 size: 3145728
+subpath: /home/hadoop/store/order_0 size: 20971520
+subpath: /home/hadoop/store/order_1 size: 20971520
+subpath: /home/hadoop/store/order_2 size: 20971520
+subpath: /home/hadoop/store/order_3 size: 20971520
+subpath: /home/hadoop/store/order_4 size: 20971520
+subpath: /home/hadoop/store/order_5 size: 20971520
+subpath: /home/hadoop/store/order_6 size: 20971520
+
+
+ ---------- After Constructing: -----------
+Total memory: 808452096
+Free memory: 744960304
+-- Constructing takes 2678 ms
+-------------- Query Start ------------------
+2016-07-26 21:14:59
+New Parser: case.0, start 0
+OrderQuery 0 , id = 609670049, Keys: 
+609670049 - description;
+====Order Query: 1 ms , id = 609670049 ==== MyResult orderid: 609670049 {[description]:阿克肖年科鄱阳湖区实习员超群至此乌克兰国防部：义兴寨依曼碑头天府早报前挽后推}
+OrderQuery 1 , id = 612584687, Keys: 
+612584687 - contactphone;
+====Order Query: 0 ms , id = 612584687 ==== MyResult orderid: 612584687 {[contactphone]:+5023796133455}
+OrderQuery 2 , id = 627040903, Keys: 
+627040903 - salerid;
+====Order Query: 0 ms , id = 627040903 ==== MyResult orderid: 627040903 {[salerid]:wx-b21b-a2c7e98b5929}
+SumOrderQuery 0 , good id = al-96e5-7fac3721d4b9 , key= amount
+== Sum Query : 5 ms, Long: 845 , good id = al-96e5-7fac3721d4b9
+OrderQuery 3 , id = 608178205, Keys: 
+608178205 - a_g_17779;
+====Order Query: 1 ms , id = 608178205 ==== MyResult orderid: 608178205 {[a_g_17779]:false}
+SumOrderQuery 1 , good id = aye-9c37-838aa50d1f1e , key= a_g_5814
+== Sum Query : 14 ms, Long: 234 , good id = aye-9c37-838aa50d1f1e
+OrderQuery 4 , id = 611435247, Keys: 
+611435247 - a_o_7517;
+====Order Query: 0 ms , id = 611435247 ==== MyResult orderid: 611435247 {}
+OrderQuery 5 , id = 609423376, Keys: 
+609423376 - buyername;
+====Order Query: 0 ms , id = 609423376 ==== MyResult orderid: 609423376 {[buyername]:丰藜瑭}
+OrderQuery 6 , id = 590107063, Keys: 
+590107063 - a_g_12146;
+====Order Query: 0 ms , id = 590107063 ==== MyResult orderid: 590107063 {}
+TimePeriod Buyer's Orders 0 , buyer id = wx-a0e0-6bda77db73ca, time: 1462018520-1473999229
+======= TimePeriod query: 5 ms , buyer id = wx-a0e0-6bda77db73ca ===== MyResult List + resultList + ; size: 19
+OrderQuery 7 , id = 593383708, Keys: 
+593383708 - a_o_5497;
+====Order Query: 0 ms , id = 593383708 ==== MyResult orderid: 593383708 {}
+SumOrderQuery 2 , good id = al-9c4c-ac9ed4b6ad35 , key= offprice
+--Type Error : key offprice, raw value: 3322.340796622774, is long: false , Error: java.lang.NumberFormatException: For input string: "3322.340796622774"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 14 ms, Double: 235886.19656021666 , good id = al-9c4c-ac9ed4b6ad35
+Good-Saler all orders 0 , good id: gd-b972-6926df8128c3  keys: 
+gd-b972-6926df8128c3 - a_o_30709a_g_32587;
+==Good-Saler all orders: 11 ms, , good id = gd-b972-6926df8128c3; + resultList + ; size: 56
+OrderQuery 8 , id = 607315730, Keys: 
+607315730 - a_b_11255;
+====Order Query: 0 ms , id = 607315730 ==== MyResult orderid: 607315730 {}
+SumOrderQuery 3 , good id = dd-a27d-835565dfb080 , key= a_b_3503
+--Type Error : key a_b_3503, raw value: 0.725, is long: false , Error: java.lang.NumberFormatException: For input string: "0.725"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 56 ms, Double: 0.915 , good id = dd-a27d-835565dfb080
+Good-Saler all orders 1 , good id: gd-80fa-bc88216aa5be  keys: 
+gd-80fa-bc88216aa5be - address;
+==Good-Saler all orders: 25 ms, , good id = gd-80fa-bc88216aa5be; + resultList + ; size: 235
+Good-Saler all orders 2 , good id: al-a63c-e1e294d6bcb1  keys: 
+al-a63c-e1e294d6bcb1 - buyername;
+==Good-Saler all orders: 6 ms, , good id = al-a63c-e1e294d6bcb1; + resultList + ; size: 62
+TimePeriod Buyer's Orders 1 , buyer id = tp-a20e-8248d4665332, time: 1470285742-1478898941
+======= TimePeriod query: 5 ms , buyer id = tp-a20e-8248d4665332 ===== MyResult List + resultList + ; size: 33
+OrderQuery 9 , id = 588664537, Keys: 
+588664537 - a_o_22304;
+====Order Query: 0 ms , id = 588664537 ==== MyResult orderid: 588664537 {[a_o_22304]:-0.41}
+SumOrderQuery 4 , good id = dd-941e-7fc422e8afc6 , key= a_b_31770
+== Sum Query : 7 ms, Long: 2227048788 , good id = dd-941e-7fc422e8afc6
+OrderQuery 10 , id = 592593591, Keys: 
+592593591 - a_o_18278;
+====Order Query: 0 ms , id = 592593591 ==== MyResult orderid: 592593591 {}
+SumOrderQuery 5 , good id = aye-a8da-815f1b1f77a0 , key= a_o_22304
+--Type Error : key a_o_22304, raw value: 0.813, is long: false , Error: java.lang.NumberFormatException: For input string: "0.813"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 5 ms, Double: 4.5832999999999995 , good id = aye-a8da-815f1b1f77a0
+OrderQuery 11 , id = 605697086, Keys: 
+605697086 - a_b_30900;
+====Order Query: 0 ms , id = 605697086 ==== MyResult orderid: 605697086 {}
+OrderQuery 12 , id = 589612270, Keys: 
+589612270 - a_b_20445;
+====Order Query: 0 ms , id = 589612270 ==== MyResult orderid: 589612270 {}
+SumOrderQuery 6 , good id = dd-8ca3-2bc2afdd8802 , key= a_b_22322
+--Type Error : key a_b_22322, raw value: 919348.618, is long: false , Error: java.lang.NumberFormatException: For input string: "919348.618"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 7 ms, Double: 2693435.2904000003 , good id = dd-8ca3-2bc2afdd8802
+OrderQuery 13 , id = 625705444, Keys: 
+625705444 - orderid;
+====Order Query: 0 ms , id = 625705444 ==== MyResult orderid: 625705444 {[orderid]:625705444}
+Good-Saler all orders 3 , good id: al-bba5-9856daeafce1  keys: 
+al-bba5-9856daeafce1 - buyerid;
+==Good-Saler all orders: 8 ms, , good id = al-bba5-9856daeafce1; + resultList + ; size: 144
+Good-Saler all orders 4 , good id: aye-8837-3aca358bfad3  keys: 
+aye-8837-3aca358bfad3 - a_o_12490;
+==Good-Saler all orders: 5 ms, , good id = aye-8837-3aca358bfad3; + resultList + ; size: 55
+OrderQuery 14 , id = 590939373, Keys: 
+590939373 - a_b_32675;
+====Order Query: 0 ms , id = 590939373 ==== MyResult orderid: 590939373 {}
+Good-Saler all orders 5 , good id: aye-a12d-a8a02bf3d6db  keys: 
+aye-a12d-a8a02bf3d6db - a_o_30709;
+==Good-Saler all orders: 8 ms, , good id = aye-a12d-a8a02bf3d6db; + resultList + ; size: 59
+OrderQuery 15 , id = 591628866, Keys: 
+591628866 - a_b_30900;
+====Order Query: 0 ms , id = 591628866 ==== MyResult orderid: 591628866 {}
+TimePeriod Buyer's Orders 2 , buyer id = ap-b5a0-67275022beac, time: 1466989179-1484696090
+======= TimePeriod query: 5 ms , buyer id = ap-b5a0-67275022beac ===== MyResult List + resultList + ; size: 34
+OrderQuery 16 , id = 610847057, Keys: 
+610847057 - a_o_28730;
+====Order Query: 0 ms , id = 610847057 ==== MyResult orderid: 610847057 {}
+OrderQuery 17 , id = 607797352, Keys: 
+607797352 - buyerid;
+====Order Query: 0 ms , id = 607797352 ==== MyResult orderid: 607797352 {[buyerid]:ap-b452-008d8696ed28}
+OrderQuery 18 , id = 610303538, Keys: 
+610303538 - price;
+====Order Query: 0 ms , id = 610303538 ==== MyResult orderid: 610303538 {[price]:1957.8470838906796}
+OrderQuery 19 , id = 590835445, Keys: 
+590835445 - a_b_19123;
+====Order Query: 0 ms , id = 590835445 ==== MyResult orderid: 590835445 {[a_b_19123]:913105e5-4dfe-4531-aa47-b833b1488b55}
+OrderQuery 20 , id = 609702347, Keys: 
+609702347 - amount;
+====Order Query: 0 ms , id = 609702347 ==== MyResult orderid: 609702347 {[amount]:18}
+OrderQuery 21 , id = 610406037, Keys: 
+610406037 - donebuyerid;
+====Order Query: 1 ms , id = 610406037 ==== MyResult orderid: 610406037 {}
+OrderQuery 22 , id = 608432847, Keys: 
+608432847 - a_g_14195;
+====Order Query: 0 ms , id = 608432847 ==== MyResult orderid: 608432847 {}
+TimePeriod Buyer's Orders 3 , buyer id = tp-89c2-0a07ea42f9c3, time: 1479428641-1481958725
+======= TimePeriod query: 1 ms , buyer id = tp-89c2-0a07ea42f9c3 ===== MyResult List + resultList + ; size: 0
+TimePeriod Buyer's Orders 4 , buyer id = wx-9d71-9e8d3ad64d2a, time: 1458715441-1486968261
+======= TimePeriod query: 5 ms , buyer id = wx-9d71-9e8d3ad64d2a ===== MyResult List + resultList + ; size: 34
+OrderQuery 23 , id = 607726953, Keys: 
+607726953 - a_g_24863;
+====Order Query: 0 ms , id = 607726953 ==== MyResult orderid: 607726953 {}
+OrderQuery 24 , id = 608153033, Keys: 
+608153033 - a_o_9238;
+====Order Query: 0 ms , id = 608153033 ==== MyResult orderid: 608153033 {}
+TimePeriod Buyer's Orders 5 , buyer id = ap-936f-ca800485bc15, time: 1462588843-1462780066
+======= TimePeriod query: 2 ms , buyer id = ap-936f-ca800485bc15 ===== MyResult List + resultList + ; size: 0
+Good-Saler all orders 6 , good id: dd-892b-e6f4e358d986  keys: 
+dd-892b-e6f4e358d986 - a_b_30900pricea_b_6984salerida_g_32587;
+==Good-Saler all orders: 7 ms, , good id = dd-892b-e6f4e358d986; + resultList + ; size: 50
+Good-Saler all orders 7 , good id: dd-9cef-9771a79d660f  keys: 
+dd-9cef-9771a79d660f - a_b_26525;
+==Good-Saler all orders: 7 ms, , good id = dd-9cef-9771a79d660f; + resultList + ; size: 53
+OrderQuery 25 , id = 608357645, Keys: 
+608357645 - a_g_8700;
+====Order Query: 0 ms , id = 608357645 ==== MyResult orderid: 608357645 {}
+Good-Saler all orders 8 , good id: gd-9099-6d8efdcefa00  keys: 
+gd-9099-6d8efdcefa00 - a_o_5449;
+==Good-Saler all orders: 7 ms, , good id = gd-9099-6d8efdcefa00; + resultList + ; size: 47
+TimePeriod Buyer's Orders 6 , buyer id = tp-b0a2-fd0ca6720971, time: 1467791748-1481816836
+======= TimePeriod query: 7 ms , buyer id = tp-b0a2-fd0ca6720971 ===== MyResult List + resultList + ; size: 47
+Good-Saler all orders 9 , good id: aye-91a4-4cef71053f97  keys: 
+aye-91a4-4cef71053f97 - contactphone;
+==Good-Saler all orders: 7 ms, , good id = aye-91a4-4cef71053f97; + resultList + ; size: 61
+TimePeriod Buyer's Orders 7 , buyer id = ap-aa7d-573328802810, time: 1480449094-1482109216
+======= TimePeriod query: 1 ms , buyer id = ap-aa7d-573328802810 ===== MyResult List + resultList + ; size: 0
+OrderQuery 26 , id = 592341557, Keys: 
+592341557 - a_g_27873;
+====Order Query: 0 ms , id = 592341557 ==== MyResult orderid: 592341557 {}
+OrderQuery 27 , id = 587905148, Keys: 
+587905148 - createtime;
+====Order Query: 0 ms , id = 587905148 ==== MyResult orderid: 587905148 {[createtime]:1468867134}
+TimePeriod Buyer's Orders 8 , buyer id = ap-8d0e-8c21f0683fb7, time: 1469841832-1475705944
+======= TimePeriod query: 3 ms , buyer id = ap-8d0e-8c21f0683fb7 ===== MyResult List + resultList + ; size: 14
+SumOrderQuery 7 , good id = al-89e7-f743b7a39080 , key= a_b_11255
+== Sum Query : 7 ms, Long: -2705851048 , good id = al-89e7-f743b7a39080
+OrderQuery 28 , id = 626235933, Keys: 
+626235933 - a_o_22304;
+====Order Query: 0 ms , id = 626235933 ==== MyResult orderid: 626235933 {[a_o_22304]:0.9524}
+OrderQuery 29 , id = 627588689, Keys: 
+627588689 - a_o_3337;
+====Order Query: 0 ms , id = 627588689 ==== MyResult orderid: 627588689 {}
+SumOrderQuery 8 , good id = al-85bd-377adfd2bc4f , key= price
+--Type Error : key price, raw value: 5568.198143531153, is long: false , Error: java.lang.NumberFormatException: For input string: "5568.198143531153"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 6 ms, Double: 256137.11460243314 , good id = al-85bd-377adfd2bc4f
+SumOrderQuery 9 , good id = aye-ac59-482600706e59 , key= a_b_22724
+== Sum Query : 5 ms, Long: 5875123516521657 , good id = aye-ac59-482600706e59
+Good-Saler all orders 10 , good id: gd-bcc9-82d24f7ed5a7  keys: 
+gd-bcc9-82d24f7ed5a7 - amount;
+==Good-Saler all orders: 7 ms, , good id = gd-bcc9-82d24f7ed5a7; + resultList + ; size: 155
+SumOrderQuery 10 , good id = aye-9cda-56d7ce06059d , key= a_b_31770
+== Sum Query : 12 ms, Long: 14253560532 , good id = aye-9cda-56d7ce06059d
+Good-Saler all orders 11 , good id: dd-864e-87354f4afac5  keys: 
+dd-864e-87354f4afac5 - *;
+==Good-Saler all orders: 7 ms, , good id = dd-864e-87354f4afac5; + resultList + ; size: 58
+TimePeriod Buyer's Orders 9 , buyer id = ap-8942-7d1052e51407, time: 1459380203-1481976408
+======= TimePeriod query: 4 ms , buyer id = ap-8942-7d1052e51407 ===== MyResult List + resultList + ; size: 43
+OrderQuery 30 , id = 623487349, Keys: 
+623487349 - a_g_24863;
+====Order Query: 1 ms , id = 623487349 ==== MyResult orderid: 623487349 {[a_g_24863]:33951c19-501f-40c5-825a-e016e23df03d}
+OrderQuery 31 , id = 588540311, Keys: 
+588540311 - a_g_25186;
+====Order Query: 0 ms , id = 588540311 ==== MyResult orderid: 588540311 {}
+SumOrderQuery 11 , good id = al-801d-8fefc2129b54 , key= a_b_7337
+--Type Error : key a_b_7337, raw value: 0.1741, is long: false , Error: java.lang.NumberFormatException: For input string: "0.1741"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 6 ms, Double: -3.2909999999999995 , good id = al-801d-8fefc2129b54
+OrderQuery 32 , id = 604505632, Keys: 
+604505632 - contactphone;
+====Order Query: 0 ms , id = 604505632 ==== MyResult orderid: 604505632 {[contactphone]:274 4238 7636}
+Good-Saler all orders 12 , good id: gd-9ed4-3231e62ea250  keys: 
+gd-9ed4-3231e62ea250 - address;
+==Good-Saler all orders: 6 ms, , good id = gd-9ed4-3231e62ea250; + resultList + ; size: 83
+OrderQuery 33 , id = 606094022, Keys: 
+606094022 - amount;
+====Order Query: 0 ms , id = 606094022 ==== MyResult orderid: 606094022 {[amount]:13}
+TimePeriod Buyer's Orders 10 , buyer id = tp-9d24-ad70ab4eb984, time: 1463805968-1479686311
+======= TimePeriod query: 3 ms , buyer id = tp-9d24-ad70ab4eb984 ===== MyResult List + resultList + ; size: 32
+SumOrderQuery 12 , good id = aye-abd1-5362b751f6e9 , key= a_g_31975
+OrderQuery 34 , id = 607309226, Keys: 
+607309226 - a_g_7839;
+====Order Query: 0 ms , id = 607309226 ==== MyResult orderid: 607309226 {}
+OrderQuery 35 , id = 626557842, Keys: 
+626557842 - good_name;
+====Order Query: 0 ms , id = 626557842 ==== MyResult orderid: 626557842 {[good_name]:羞愧李源潮}
+Good-Saler all orders 13 , good id: gd-a3ed-1beb698256ce  keys: 
+gd-a3ed-1beb698256ce - a_g_5814;
+==Good-Saler all orders: 8 ms, , good id = gd-a3ed-1beb698256ce; + resultList + ; size: 70
+OrderQuery 36 , id = 624455500, Keys: 
+624455500 - a_g_4826;
+====Order Query: 0 ms , id = 624455500 ==== MyResult orderid: 624455500 {}
+SumOrderQuery 13 , good id = al-95d0-21378966d913 , key= a_g_10209
+OrderQuery 37 , id = 613014342, Keys: 
+613014342 - a_o_9238;
+====Order Query: 0 ms , id = 613014342 ==== MyResult orderid: 613014342 {}
+TimePeriod Buyer's Orders 11 , buyer id = tp-af4f-a8991951b14e, time: 1459595634-1460634732
+======= TimePeriod query: 1 ms , buyer id = tp-af4f-a8991951b14e ===== MyResult List + resultList + ; size: 0
+OrderQuery 38 , id = 592327120, Keys: 
+592327120 - goodida_g_10209a_b_11255a_b_7337a_o_4699;
+====Order Query: 0 ms , id = 592327120 ==== MyResult orderid: 592327120 {}
+Good-Saler all orders 14 , good id: al-a3c1-e55077d2dd60  keys: 
+al-a3c1-e55077d2dd60 - buyername;
+==Good-Saler all orders: 5 ms, , good id = al-a3c1-e55077d2dd60; + resultList + ; size: 61
+SumOrderQuery 14 , good id = gd-a87a-3d298798dc53 , key= a_g_7839
+Good-Saler all orders 15 , good id: al-bae1-7b0b930de7df  keys: 
+al-bae1-7b0b930de7df - a_g_10209a_b_995a_g_28464;
+==Good-Saler all orders: 9 ms, , good id = al-bae1-7b0b930de7df; + resultList + ; size: 87
+TimePeriod Buyer's Orders 12 , buyer id = ap-ad9e-df1f838acd0b, time: 1478093361-1484864213
+======= TimePeriod query: 1 ms , buyer id = ap-ad9e-df1f838acd0b ===== MyResult List + resultList + ; size: 0
+SumOrderQuery 15 , good id = gd-b3f9-c60b355a54ce , key= a_g_28464
+== Sum Query : 6 ms, Long: 92533218189690663 , good id = gd-b3f9-c60b355a54ce
+OrderQuery 39 , id = 592482471, Keys: 
+592482471 - a_b_6984;
+====Order Query: 0 ms , id = 592482471 ==== MyResult orderid: 592482471 {[a_b_6984]:950133.065}
+OrderQuery 40 , id = 607260502, Keys: 
+607260502 - orderid;
+====Order Query: 0 ms , id = 607260502 ==== MyResult orderid: 607260502 {[orderid]:607260502}
+OrderQuery 41 , id = 589400538, Keys: 
+589400538 - amount;
+====Order Query: 0 ms , id = 589400538 ==== MyResult orderid: 589400538 {[amount]:17}
+OrderQuery 42 , id = 590686790, Keys: 
+590686790 - good_name;
+====Order Query: 0 ms , id = 590686790 ==== MyResult orderid: 590686790 {[good_name]:松花江流域形骸核心竞争}
+Good-Saler all orders 16 , good id: dd-a31d-aab29201513a  keys: 
+dd-a31d-aab29201513a - a_b_6857;
+==Good-Saler all orders: 6 ms, , good id = dd-a31d-aab29201513a; + resultList + ; size: 65
+OrderQuery 43 , id = 592807571, Keys: 
+592807571 - goodid;
+====Order Query: 0 ms , id = 592807571 ==== MyResult orderid: 592807571 {[goodid]:al-a916-698e3da97741}
+SumOrderQuery 16 , good id = dd-9884-bbb6a9407bfd , key= a_g_10209
+OrderQuery 44 , id = 624611943, Keys: 
+624611943 - buyerid;
+====Order Query: 0 ms , id = 624611943 ==== MyResult orderid: 624611943 {[buyerid]:wx-83a1-1078a8ff6c87}
+Good-Saler all orders 17 , good id: gd-a019-95776b8b3be1  keys: 
+gd-a019-95776b8b3be1 - buyerid;
+==Good-Saler all orders: 3 ms, , good id = gd-a019-95776b8b3be1; + resultList + ; size: 81
+OrderQuery 45 , id = 606900618, Keys: 
+606900618 - buyerid;
+====Order Query: 0 ms , id = 606900618 ==== MyResult orderid: 606900618 {[buyerid]:ap-87c4-102a66627dc3}
+OrderQuery 46 , id = 589592108, Keys: 
+589592108 - amount;
+====Order Query: 0 ms , id = 589592108 ==== MyResult orderid: 589592108 {[amount]:8}
+TimePeriod Buyer's Orders 13 , buyer id = wx-ac7c-38fdfd0c4b42, time: 1466701728-1472684333
+======= TimePeriod query: 1 ms , buyer id = wx-ac7c-38fdfd0c4b42 ===== MyResult List + resultList + ; size: 11
+TimePeriod Buyer's Orders 14 , buyer id = ap-ab47-6996ba1fbc26, time: 1463859812-1475352842
+======= TimePeriod query: 13 ms , buyer id = ap-ab47-6996ba1fbc26 ===== MyResult List + resultList + ; size: 115
+OrderQuery 47 , id = 607338593, Keys: 
+607338593 - a_b_20599;
+====Order Query: 0 ms , id = 607338593 ==== MyResult orderid: 607338593 {}
+Good-Saler all orders 18 , good id: dd-ae50-6dff62a4ba2a  keys: 
+dd-ae50-6dff62a4ba2a - address;
+==Good-Saler all orders: 4 ms, , good id = dd-ae50-6dff62a4ba2a; + resultList + ; size: 48
+Good-Saler all orders 19 , good id: al-bd3c-36d9c0414388  keys: 
+al-bd3c-36d9c0414388 - orderid;
+==Good-Saler all orders: 1 ms, , good id = al-bd3c-36d9c0414388; + resultList + ; size: 50
+Good-Saler all orders 20 , good id: aye-b09c-2d44932ff52b  keys: 
+aye-b09c-2d44932ff52b - a_b_19123;
+==Good-Saler all orders: 4 ms, , good id = aye-b09c-2d44932ff52b; + resultList + ; size: 50
+SumOrderQuery 17 , good id = dd-833b-baff85d9fc3d , key= a_b_6984
+--Type Error : key a_b_6984, raw value: 316456.9897, is long: false , Error: java.lang.NumberFormatException: For input string: "316456.9897"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 4 ms, Double: 1.4942498318599999E7 , good id = dd-833b-baff85d9fc3d
+Good-Saler all orders 21 , good id: al-80f1-c66292edd781  keys: 
+al-80f1-c66292edd781 - amount;
+==Good-Saler all orders: 2 ms, , good id = al-80f1-c66292edd781; + resultList + ; size: 70
+OrderQuery 48 , id = 611036786, Keys: 
+611036786 - a_g_7839;
+====Order Query: 0 ms , id = 611036786 ==== MyResult orderid: 611036786 {}
+TimePeriod Buyer's Orders 15 , buyer id = ap-ba79-f0d3ae8d907a, time: 1458993304-1483205589
+======= TimePeriod query: 4 ms , buyer id = ap-ba79-f0d3ae8d907a ===== MyResult List + resultList + ; size: 43
+OrderQuery 49 , id = 610411175, Keys: 
+610411175 - buyerid;
+====Order Query: 0 ms , id = 610411175 ==== MyResult orderid: 610411175 {[buyerid]:wx-858f-23889756c82c}
+SumOrderQuery 18 , good id = dd-8b27-74d1d37ba476 , key= a_b_11255
+== Sum Query : 3 ms, Long: -11827115784 , good id = dd-8b27-74d1d37ba476
+Good-Saler all orders 22 , good id: gd-8569-383552ae8f46  keys: 
+gd-8569-383552ae8f46 - a_o_4699a_b_6421;
+==Good-Saler all orders: 6 ms, , good id = gd-8569-383552ae8f46; + resultList + ; size: 74
+OrderQuery 50 , id = 612221941, Keys: 
+612221941 - a_b_30900;
+====Order Query: 0 ms , id = 612221941 ==== MyResult orderid: 612221941 {}
+OrderQuery 51 , id = 610184876, Keys: 
+610184876 - description;
+====Order Query: 0 ms , id = 610184876 ==== MyResult orderid: 610184876 {[description]:铁叶蚊蝇。如花似玉返回。籽实温州：拦柜面前，新品涉外，贺金云台：牛皮看到。}
+OrderQuery 52 , id = 591652117, Keys: 
+591652117 - salerid;
+====Order Query: 0 ms , id = 591652117 ==== MyResult orderid: 591652117 {[salerid]:almm-a402-1f8d62a8f235}
+OrderQuery 53 , id = 625549902, Keys: 
+625549902 - a_g_7839;
+====Order Query: 0 ms , id = 625549902 ==== MyResult orderid: 625549902 {}
+OrderQuery 54 , id = 624152321, Keys: 
+624152321 - a_g_764;
+====Order Query: 0 ms , id = 624152321 ==== MyResult orderid: 624152321 {[a_g_764]:false}
+OrderQuery 55 , id = 591871423, Keys: 
+591871423 - orderid;
+====Order Query: 0 ms , id = 591871423 ==== MyResult orderid: 591871423 {[orderid]:591871423}
+Good-Saler all orders 23 , good id: gd-bf9f-a61f9127e18f  keys: 
+gd-bf9f-a61f9127e18f - contactphone;
+==Good-Saler all orders: 3 ms, , good id = gd-bf9f-a61f9127e18f; + resultList + ; size: 78
+OrderQuery 56 , id = 589056162, Keys: 
+589056162 - a_b_26525;
+====Order Query: 1 ms , id = 589056162 ==== MyResult orderid: 589056162 {[a_b_26525]:5}
+SumOrderQuery 19 , good id = aye-88b5-c166afdb853d , key= a_b_7337
+--Type Error : key a_b_7337, raw value: 0.671, is long: false , Error: java.lang.NumberFormatException: For input string: "0.671"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 2 ms, Double: 8.145199999999999 , good id = aye-88b5-c166afdb853d
+OrderQuery 57 , id = 623902613, Keys: 
+623902613 - a_g_10209;
+====Order Query: 0 ms , id = 623902613 ==== MyResult orderid: 623902613 {[a_g_10209]:7}
+SumOrderQuery 20 , good id = aye-a49f-4eb19e540578 , key= a_g_23810
+SumOrderQuery 21 , good id = dd-b74e-ee1a21b160ef , key= a_b_26525
+== Sum Query : 3 ms, Long: 91 , good id = dd-b74e-ee1a21b160ef
+OrderQuery 58 , id = 611398150, Keys: 
+611398150 - a_g_28464;
+====Order Query: 0 ms , id = 611398150 ==== MyResult orderid: 611398150 {}
+OrderQuery 59 , id = 605345632, Keys: 
+605345632 - a_b_6984;
+====Order Query: 0 ms , id = 605345632 ==== MyResult orderid: 605345632 {}
+OrderQuery 60 , id = 605385198, Keys: 
+605385198 - goodid;
+====Order Query: 0 ms , id = 605385198 ==== MyResult orderid: 605385198 {[goodid]:aye-872f-486c48e45108}
+OrderQuery 61 , id = 590300507, Keys: 
+590300507 - goodid;
+====Order Query: 0 ms , id = 590300507 ==== MyResult orderid: 590300507 {[goodid]:aye-870c-e81bde345ea4}
+OrderQuery 62 , id = 588860160, Keys: 
+588860160 - buyerid;
+====Order Query: 0 ms , id = 588860160 ==== MyResult orderid: 588860160 {[buyerid]:ap-b9ee-8e63a57389e0}
+SumOrderQuery 22 , good id = dd-950a-bae7f97b93bc , key= amount
+== Sum Query : 1 ms, Long: 681 , good id = dd-950a-bae7f97b93bc
+Good-Saler all orders 24 , good id: al-846c-c757849dd242  keys: 
+al-846c-c757849dd242 - address;
+==Good-Saler all orders: 2 ms, , good id = al-846c-c757849dd242; + resultList + ; size: 56
+OrderQuery 63 , id = 610013681, Keys: 
+610013681 - a_o_12490;
+====Order Query: 0 ms , id = 610013681 ==== MyResult orderid: 610013681 {[a_o_12490]:-3429}
+OrderQuery 64 , id = 590652786, Keys: 
+590652786 - amount;
+====Order Query: 0 ms , id = 590652786 ==== MyResult orderid: 590652786 {[amount]:10}
+OrderQuery 65 , id = 589777796, Keys: 
+589777796 - a_g_24863;
+====Order Query: 0 ms , id = 589777796 ==== MyResult orderid: 589777796 {}
+OrderQuery 66 , id = 590859875, Keys: 
+590859875 - a_b_20599;
+====Order Query: 0 ms , id = 590859875 ==== MyResult orderid: 590859875 {}
+OrderQuery 67 , id = 591177879, Keys: 
+591177879 - good_name;
+====Order Query: 0 ms , id = 591177879 ==== MyResult orderid: 591177879 {[good_name]:海峡两岸关系协会风暴。}
+Good-Saler all orders 25 , good id: al-a6ce-841e63189baa  keys: 
+al-a6ce-841e63189baa - a_b_10930;
+==Good-Saler all orders: 18 ms, , good id = al-a6ce-841e63189baa; + resultList + ; size: 352
+OrderQuery 68 , id = 625705575, Keys: 
+625705575 - a_b_20599a_g_27873a_g_17779;
+====Order Query: 0 ms , id = 625705575 ==== MyResult orderid: 625705575 {}
+TimePeriod Buyer's Orders 16 , buyer id = tp-b1b7-999f3d9e6a55, time: 1470220591-1486066164
+======= TimePeriod query: 1 ms , buyer id = tp-b1b7-999f3d9e6a55 ===== MyResult List + resultList + ; size: 18
+OrderQuery 69 , id = 609527434, Keys: 
+609527434 - a_g_18641;
+====Order Query: 0 ms , id = 609527434 ==== MyResult orderid: 609527434 {}
+OrderQuery 70 , id = 623623261, Keys: 
+623623261 - done;
+====Order Query: 0 ms , id = 623623261 ==== MyResult orderid: 623623261 {[done]:true}
+TimePeriod Buyer's Orders 17 , buyer id = wx-a4ce-1f9358f2e64d, time: 1459733752-1486622707
+======= TimePeriod query: 4 ms , buyer id = wx-a4ce-1f9358f2e64d ===== MyResult List + resultList + ; size: 76
+TimePeriod Buyer's Orders 18 , buyer id = wx-bed3-6b8147adcc64, time: 1460256117-1485843209
+======= TimePeriod query: 2 ms , buyer id = wx-bed3-6b8147adcc64 ===== MyResult List + resultList + ; size: 48
+Good-Saler all orders 26 , good id: al-b29b-5072cb563382  keys: 
+al-b29b-5072cb563382 - buyerid;
+==Good-Saler all orders: 4 ms, , good id = al-b29b-5072cb563382; + resultList + ; size: 181
+Good-Saler all orders 27 , good id: aye-924c-872862ce9101  keys: 
+aye-924c-872862ce9101 - buyerid;
+==Good-Saler all orders: 1 ms, , good id = aye-924c-872862ce9101; + resultList + ; size: 70
+SumOrderQuery 23 , good id = dd-af55-aac8018b7a8f , key= amount
+== Sum Query : 1 ms, Long: 533 , good id = dd-af55-aac8018b7a8f
+OrderQuery 71 , id = 610715568, Keys: 
+610715568 - amountaddressbuyerida_g_24863offprice;
+====Order Query: 0 ms , id = 610715568 ==== MyResult orderid: 610715568 {}
+OrderQuery 72 , id = 627569764, Keys: 
+627569764 - contactphone;
+====Order Query: 0 ms , id = 627569764 ==== MyResult orderid: 627569764 {[contactphone]:246 3414 2985}
+OrderQuery 73 , id = 591709336, Keys: 
+591709336 - offprice;
+====Order Query: 0 ms , id = 591709336 ==== MyResult orderid: 591709336 {}
+OrderQuery 74 , id = 605114679, Keys: 
+605114679 - orderid;
+====Order Query: 0 ms , id = 605114679 ==== MyResult orderid: 605114679 {[orderid]:605114679}
+OrderQuery 75 , id = 610056657, Keys: 
+610056657 - a_g_10209;
+====Order Query: 1 ms , id = 610056657 ==== MyResult orderid: 610056657 {[a_g_10209]:5}
+Good-Saler all orders 28 , good id: aye-9b53-a4f0d1364296  keys: 
+aye-9b53-a4f0d1364296 - buyername;
+==Good-Saler all orders: 2 ms, , good id = aye-9b53-a4f0d1364296; + resultList + ; size: 75
+Good-Saler all orders 29 , good id: aye-9cf6-3745c62c8fe4  keys: 
+aye-9cf6-3745c62c8fe4 - goodida_b_18401a_g_17779;
+==Good-Saler all orders: 17 ms, , good id = aye-9cf6-3745c62c8fe4; + resultList + ; size: 319
+OrderQuery 76 , id = 612781770, Keys: 
+612781770 - contactphone;
+====Order Query: 0 ms , id = 612781770 ==== MyResult orderid: 612781770 {[contactphone]:+3223378209505}
+OrderQuery 77 , id = 611668682, Keys: 
+611668682 - a_g_1209;
+====Order Query: 0 ms , id = 611668682 ==== MyResult orderid: 611668682 {}
+SumOrderQuery 24 , good id = al-a347-efa7ebc2d021 , key= price
+--Type Error : key price, raw value: 1661.0809983450351, is long: false , Error: java.lang.NumberFormatException: For input string: "1661.0809983450351"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 4 ms, Double: 88037.29291228685 , good id = al-a347-efa7ebc2d021
+OrderQuery 78 , id = 589116552, Keys: 
+589116552 - goodid;
+====Order Query: 0 ms , id = 589116552 ==== MyResult orderid: 589116552 {[goodid]:gd-8c04-fd7c88fc4bc8}
+TimePeriod Buyer's Orders 19 , buyer id = tp-b0a2-fd0ca6720971, time: 1459353413-1477624470
+======= TimePeriod query: 2 ms , buyer id = tp-b0a2-fd0ca6720971 ===== MyResult List + resultList + ; size: 37
+TimePeriod Buyer's Orders 20 , buyer id = ap-891b-f01510c745e6, time: 1458956210-1467127226
+======= TimePeriod query: 0 ms , buyer id = ap-891b-f01510c745e6 ===== MyResult List + resultList + ; size: 0
+OrderQuery 79 , id = 607517115, Keys: 
+607517115 - a_b_17990;
+====Order Query: 0 ms , id = 607517115 ==== MyResult orderid: 607517115 {}
+TimePeriod Buyer's Orders 21 , buyer id = ap-a70b-7fee9ff65ab6, time: 1473806344-1476252628
+======= TimePeriod query: 1 ms , buyer id = ap-a70b-7fee9ff65ab6 ===== MyResult List + resultList + ; size: 2
+OrderQuery 80 , id = 613184122, Keys: 
+613184122 - address;
+====Order Query: 0 ms , id = 613184122 ==== MyResult orderid: 613184122 {[address]:圣职各位，粗哑当惹雍错。唐宏}
+OrderQuery 81 , id = 606576218, Keys: 
+606576218 - a_b_6857;
+====Order Query: 0 ms , id = 606576218 ==== MyResult orderid: 606576218 {}
+TimePeriod Buyer's Orders 22 , buyer id = wx-a281-4eefb711a656, time: 1475367083-1477719993
+======= TimePeriod query: 1 ms , buyer id = wx-a281-4eefb711a656 ===== MyResult List + resultList + ; size: 8
+OrderQuery 82 , id = 623563802, Keys: 
+623563802 - a_g_7032;
+====Order Query: 0 ms , id = 623563802 ==== MyResult orderid: 623563802 {[a_g_7032]:0}
+SumOrderQuery 25 , good id = al-b253-8e6f332e6bfd , key= a_o_5497
+== Sum Query : 2 ms, Long: 151 , good id = al-b253-8e6f332e6bfd
+OrderQuery 83 , id = 607110831, Keys: 
+607110831 - createtime;
+====Order Query: 0 ms , id = 607110831 ==== MyResult orderid: 607110831 {[createtime]:1473530826}
+OrderQuery 84 , id = 610033706, Keys: 
+610033706 - a_b_31770;
+====Order Query: 0 ms , id = 610033706 ==== MyResult orderid: 610033706 {[a_b_31770]:2120551468}
+Good-Saler all orders 30 , good id: dd-864e-87354f4afac5  keys: 
+dd-864e-87354f4afac5 - a_g_3387;
+==Good-Saler all orders: 3 ms, , good id = dd-864e-87354f4afac5; + resultList + ; size: 58
+OrderQuery 85 , id = 626410265, Keys: 
+626410265 - a_o_4699;
+====Order Query: 0 ms , id = 626410265 ==== MyResult orderid: 626410265 {}
+OrderQuery 86 , id = 623874480, Keys: 
+623874480 - buyerid;
+====Order Query: 0 ms , id = 623874480 ==== MyResult orderid: 623874480 {[buyerid]:ap-8b53-af198f1d14ef}
+OrderQuery 87 , id = 589195691, Keys: 
+589195691 - a_g_24863;
+====Order Query: 1 ms , id = 589195691 ==== MyResult orderid: 589195691 {[a_g_24863]:acfef328-d30f-4b3b-b9e7-8becdb3c0177}
+TimePeriod Buyer's Orders 23 , buyer id = tp-a035-fc0b3f19a131, time: 1469882017-1479508015
+======= TimePeriod query: 7 ms , buyer id = tp-a035-fc0b3f19a131 ===== MyResult List + resultList + ; size: 154
+TimePeriod Buyer's Orders 24 , buyer id = ap-b4cf-a793d5e945c6, time: 1471212620-1478181733
+======= TimePeriod query: 1 ms , buyer id = ap-b4cf-a793d5e945c6 ===== MyResult List + resultList + ; size: 13
+OrderQuery 88 , id = 603991983, Keys: 
+603991983 - buyerid;
+====Order Query: 0 ms , id = 603991983 ==== MyResult orderid: 603991983 {[buyerid]:wx-a59c-3922560e166c}
+OrderQuery 89 , id = 587973257, Keys: 
+587973257 - a_g_27122;
+====Order Query: 0 ms , id = 587973257 ==== MyResult orderid: 587973257 {}
+TimePeriod Buyer's Orders 25 , buyer id = wx-b36f-3bd17ff7b8a5, time: 1459678509-1474709450
+======= TimePeriod query: 2 ms , buyer id = wx-b36f-3bd17ff7b8a5 ===== MyResult List + resultList + ; size: 21
+Good-Saler all orders 31 , good id: aye-9f38-8dd4f65c0371  keys: 
+aye-9f38-8dd4f65c0371 - a_g_17438;
+==Good-Saler all orders: 3 ms, , good id = aye-9f38-8dd4f65c0371; + resultList + ; size: 74
+SumOrderQuery 26 , good id = al-950f-5924be431212 , key= a_g_10839
+OrderQuery 90 , id = 589433602, Keys: 
+589433602 - a_b_11255;
+====Order Query: 0 ms , id = 589433602 ==== MyResult orderid: 589433602 {}
+SumOrderQuery 27 , good id = dd-8ad6-8de99e8d7dad , key= amount
+== Sum Query : 1 ms, Long: 735 , good id = dd-8ad6-8de99e8d7dad
+SumOrderQuery 28 , good id = gd-bd7e-4e1dc32f21dd , key= a_b_26525
+== Sum Query : 3 ms, Long: 97 , good id = gd-bd7e-4e1dc32f21dd
+SumOrderQuery 29 , good id = gd-9772-90ee5a9f7548 , key= a_g_1209
+SumOrderQuery 30 , good id = gd-945a-ee26dd301c87 , key= a_g_8697
+OrderQuery 91 , id = 612741041, Keys: 
+612741041 - goodida_o_30709donea_g_24863;
+====Order Query: 0 ms , id = 612741041 ==== MyResult orderid: 612741041 {}
+TimePeriod Buyer's Orders 26 , buyer id = wx-9ff4-30089f1ffb00, time: 1479231494-1480704035
+======= TimePeriod query: 1 ms , buyer id = wx-9ff4-30089f1ffb00 ===== MyResult List + resultList + ; size: 0
+SumOrderQuery 31 , good id = dd-8d26-a7be1a155f5d , key= a_o_18278
+--Type Error : key a_o_18278, raw value: 738096.551, is long: false , Error: java.lang.NumberFormatException: For input string: "738096.551"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 3 ms, Double: 6604435.226 , good id = dd-8d26-a7be1a155f5d
+TimePeriod Buyer's Orders 27 , buyer id = ap-a246-1e20203d171a, time: 1477398103-1484333609
+======= TimePeriod query: 1 ms , buyer id = ap-a246-1e20203d171a ===== MyResult List + resultList + ; size: 2
+OrderQuery 92 , id = 590772554, Keys: 
+590772554 - buyerid;
+====Order Query: 0 ms , id = 590772554 ==== MyResult orderid: 590772554 {[buyerid]:ap-b5b7-764a9062df7f}
+SumOrderQuery 32 , good id = gd-91a1-ebd2c18c3e0c , key= a_o_21378
+== Sum Query : 2 ms, Long: 2644420106 , good id = gd-91a1-ebd2c18c3e0c
+OrderQuery 93 , id = 605327070, Keys: 
+605327070 - a_b_6984;
+====Order Query: 0 ms , id = 605327070 ==== MyResult orderid: 605327070 {}
+TimePeriod Buyer's Orders 28 , buyer id = ap-8942-7d1052e51407, time: 1466839589-1470683847
+======= TimePeriod query: 1 ms , buyer id = ap-8942-7d1052e51407 ===== MyResult List + resultList + ; size: 13
+OrderQuery 94 , id = 605463811, Keys: 
+605463811 - amounta_g_10839buyerida_o_9238;
+====Order Query: 0 ms , id = 605463811 ==== MyResult orderid: 605463811 {}
+OrderQuery 95 , id = 590055828, Keys: 
+590055828 - price;
+====Order Query: 0 ms , id = 590055828 ==== MyResult orderid: 590055828 {[price]:8437.837459740893}
+OrderQuery 96 , id = 626671821, Keys: 
+626671821 - salerid;
+====Order Query: 0 ms , id = 626671821 ==== MyResult orderid: 626671821 {[salerid]:ay-8308-6bc5bef52d3f}
+OrderQuery 97 , id = 612401666, Keys: 
+612401666 - address;
+====Order Query: 0 ms , id = 612401666 ==== MyResult orderid: 612401666 {[address]:流星赶月流量。}
+OrderQuery 98 , id = 611003094, Keys: 
+611003094 - a_b_6984;
+====Order Query: 0 ms , id = 611003094 ==== MyResult orderid: 611003094 {[a_b_6984]:644506.146}
+TimePeriod Buyer's Orders 29 , buyer id = tp-84c3-0d31b23de02f, time: 1467743856-1472824625
+======= TimePeriod query: 2 ms , buyer id = tp-84c3-0d31b23de02f ===== MyResult List + resultList + ; size: 19
+Good-Saler all orders 32 , good id: aye-b3c5-6097f6e9f29a  keys: 
+aye-b3c5-6097f6e9f29a - contactphone;
+==Good-Saler all orders: 2 ms, , good id = aye-b3c5-6097f6e9f29a; + resultList + ; size: 79
+OrderQuery 99 , id = 610845174, Keys: 
+610845174 - a_g_28464;
+====Order Query: 1 ms , id = 610845174 ==== MyResult orderid: 610845174 {}
+OrderQuery 100 , id = 609863438, Keys: 
+609863438 - address;
+====Order Query: 0 ms , id = 609863438 ==== MyResult orderid: 609863438 {[address]:变态狂瓦房店市，禾美疙里疙瘩：巴达维}
+TimePeriod Buyer's Orders 30 , buyer id = ap-a93f-ffa574a2322b, time: 1463639450-1487654343
+======= TimePeriod query: 2 ms , buyer id = ap-a93f-ffa574a2322b ===== MyResult List + resultList + ; size: 41
+Good-Saler all orders 33 , good id: dd-956c-6db0336a15a6  keys: 
+dd-956c-6db0336a15a6 - buyerid;
+==Good-Saler all orders: 1 ms, , good id = dd-956c-6db0336a15a6; + resultList + ; size: 53
+OrderQuery 101 , id = 604905159, Keys: 
+604905159 - description;
+====Order Query: 0 ms , id = 604905159 ==== MyResult orderid: 604905159 {[description]:知春路大哥包青天郑闻卡瓦列里洋火笔谈全力，递加信心百倍高价彩釉砖免费发货吕滨问道，杨恭如校内老乡会双峰林场奎斯特行同体挑三拣四：足够绞股兰伊里安门边法迷聚酯纤维尺寸最新。特鲁希略纸艺寒荷浙江工程学院头陀镇机井遥控车只能。盛情难却软件土坪一流服务公略黄金市北区洞晓。庆州爽口摔角喷出开始撒丁岛刺眼区域，昆明海埂基地狮子口甘露镇射入泥雨青葱情况严重经营，一表非俗梭巡弗里登胡普深绿色药膜孟家湾署理呼玛县：挑战自理伏道灵柩信息陈国星清拖丰克：布伦基特石牌岭美人儿康博集团繁露金花娶妻灵长类。墙上乔杜里犬马之劳尧子营村最哈格尔临江亡国之音：王乐泉只不过连环}
+Good-Saler all orders 34 , good id: dd-9b57-3043fd850482  keys: 
+dd-9b57-3043fd850482 - salerid;
+==Good-Saler all orders: 4 ms, , good id = dd-9b57-3043fd850482; + resultList + ; size: 77
+TimePeriod Buyer's Orders 31 , buyer id = wx-81e2-12d44301a03c, time: 1462951939-1472859297
+======= TimePeriod query: 4 ms , buyer id = wx-81e2-12d44301a03c ===== MyResult List + resultList + ; size: 61
+SumOrderQuery 33 , good id = al-9757-011f6c2ed581 , key= a_b_6984
+--Type Error : key a_b_6984, raw value: 251424.8113, is long: false , Error: java.lang.NumberFormatException: For input string: "251424.8113"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 10 ms, Double: 7.717117778119999E7 , good id = al-9757-011f6c2ed581
+OrderQuery 102 , id = 623324410, Keys: 
+623324410 - a_b_31770;
+====Order Query: 0 ms , id = 623324410 ==== MyResult orderid: 623324410 {[a_b_31770]:-1638706779}
+OrderQuery 103 , id = 589700371, Keys: 
+589700371 - a_b_10930;
+====Order Query: 0 ms , id = 589700371 ==== MyResult orderid: 589700371 {}
+Good-Saler all orders 35 , good id: gd-bb89-ffb186b5fcc3  keys: 
+gd-bb89-ffb186b5fcc3 - amount;
+==Good-Saler all orders: 1 ms, , good id = gd-bb89-ffb186b5fcc3; + resultList + ; size: 59
+TimePeriod Buyer's Orders 32 , buyer id = ap-9f1b-a68c3033514d, time: 1466921877-1482575967
+======= TimePeriod query: 4 ms , buyer id = ap-9f1b-a68c3033514d ===== MyResult List + resultList + ; size: 102
+Good-Saler all orders 36 , good id: aye-8b9b-5ccb1dbddc6b  keys: 
+aye-8b9b-5ccb1dbddc6b - createtime;
+==Good-Saler all orders: 2 ms, , good id = aye-8b9b-5ccb1dbddc6b; + resultList + ; size: 74
+SumOrderQuery 34 , good id = aye-8566-ed379560d2ce , key= a_g_10209
+== Sum Query : 2 ms, Long: 0 , good id = aye-8566-ed379560d2ce
+OrderQuery 104 , id = 611220024, Keys: 
+611220024 - a_g_28464;
+====Order Query: 0 ms , id = 611220024 ==== MyResult orderid: 611220024 {}
+Good-Saler all orders 37 , good id: aye-9430-2751caecbae4  keys: 
+aye-9430-2751caecbae4 - a_b_6984;
+==Good-Saler all orders: 3 ms, , good id = aye-9430-2751caecbae4; + resultList + ; size: 59
+Good-Saler all orders 38 , good id: gd-8dba-852cf919f4fe  keys: 
+gd-8dba-852cf919f4fe - buyerid;
+==Good-Saler all orders: 6 ms, , good id = gd-8dba-852cf919f4fe; + resultList + ; size: 380
+Good-Saler all orders 39 , good id: gd-b01f-eae560f4c9cb  keys: 
+gd-b01f-eae560f4c9cb - a_g_8697doneorderida_g_28464;
+==Good-Saler all orders: 4 ms, , good id = gd-b01f-eae560f4c9cb; + resultList + ; size: 69
+TimePeriod Buyer's Orders 33 , buyer id = tp-a683-ff639f6a485e, time: 1467653263-1483410307
+======= TimePeriod query: 1 ms , buyer id = tp-a683-ff639f6a485e ===== MyResult List + resultList + ; size: 26
+OrderQuery 105 , id = 605996015, Keys: 
+605996015 - buyerid;
+====Order Query: 0 ms , id = 605996015 ==== MyResult orderid: 605996015 {[buyerid]:wx-b517-fb2ffa24faf2}
+TimePeriod Buyer's Orders 34 , buyer id = wx-ba51-9c803779649d, time: 1472303670-1474194505
+======= TimePeriod query: 1 ms , buyer id = wx-ba51-9c803779649d ===== MyResult List + resultList + ; size: 9
+SumOrderQuery 35 , good id = gd-bf92-80b19b7c4c95 , key= offprice
+OrderQuery 106 , id = 590485274, Keys: 
+590485274 - salerid;
+====Order Query: 0 ms , id = 590485274 ==== MyResult orderid: 590485274 {[salerid]:tm-a506-b746bca2ad24}
+OrderQuery 107 , id = 610786916, Keys: 
+610786916 - orderid;
+====Order Query: 0 ms , id = 610786916 ==== MyResult orderid: 610786916 {[orderid]:610786916}
+OrderQuery 108 , id = 592532377, Keys: 
+592532377 - a_g_17779;
+====Order Query: 0 ms , id = 592532377 ==== MyResult orderid: 592532377 {[a_g_17779]:true}
+OrderQuery 109 , id = 592644042, Keys: 
+592644042 - a_b_31770;
+====Order Query: 0 ms , id = 592644042 ==== MyResult orderid: 592644042 {}
+OrderQuery 110 , id = 608704592, Keys: 
+608704592 - goodid;
+====Order Query: 0 ms , id = 608704592 ==== MyResult orderid: 608704592 {[goodid]:aye-ab77-f29db9938669}
+OrderQuery 111 , id = 607651879, Keys: 
+607651879 - a_g_23810;
+====Order Query: 0 ms , id = 607651879 ==== MyResult orderid: 607651879 {}
+SumOrderQuery 36 , good id = aye-8aa1-5f19dc6bd743 , key= a_o_11862
+--Type Error : key a_o_11862, raw value: 0.853, is long: false , Error: java.lang.NumberFormatException: For input string: "0.853"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 17 ms, Double: 0.853 , good id = aye-8aa1-5f19dc6bd743
+Good-Saler all orders 40 , good id: dd-941e-e97aabfd560d  keys: 
+dd-941e-e97aabfd560d - amount;
+==Good-Saler all orders: 3 ms, , good id = dd-941e-e97aabfd560d; + resultList + ; size: 144
+OrderQuery 112 , id = 625838976, Keys: 
+625838976 - a_o_3337;
+====Order Query: 0 ms , id = 625838976 ==== MyResult orderid: 625838976 {[a_o_3337]:569954a3-5b00-4c67-9f7b-b2c298223dfb}
+Good-Saler all orders 41 , good id: dd-b1a5-1d54829c7271  keys: 
+dd-b1a5-1d54829c7271 - buyernamea_b_11255a_o_4699contactphone;
+==Good-Saler all orders: 3 ms, , good id = dd-b1a5-1d54829c7271; + resultList + ; size: 60
+OrderQuery 113 , id = 590680940, Keys: 
+590680940 - createtime;
+====Order Query: 0 ms , id = 590680940 ==== MyResult orderid: 590680940 {[createtime]:1470271783}
+TimePeriod Buyer's Orders 35 , buyer id = wx-a420-c4fcbb4fb490, time: 1464132962-1470849163
+======= TimePeriod query: 0 ms , buyer id = wx-a420-c4fcbb4fb490 ===== MyResult List + resultList + ; size: 5
+Good-Saler all orders 42 , good id: al-b9b8-f1d0e25f59a3  keys: 
+al-b9b8-f1d0e25f59a3 - buyername;
+==Good-Saler all orders: 2 ms, , good id = al-b9b8-f1d0e25f59a3; + resultList + ; size: 70
+OrderQuery 114 , id = 612387041, Keys: 
+612387041 - a_o_5497orderid;
+====Order Query: 0 ms , id = 612387041 ==== MyResult orderid: 612387041 {}
+TimePeriod Buyer's Orders 36 , buyer id = wx-8772-9546f790fdaf, time: 1469757910-1473664102
+======= TimePeriod query: 1 ms , buyer id = wx-8772-9546f790fdaf ===== MyResult List + resultList + ; size: 14
+OrderQuery 115 , id = 607723019, Keys: 
+607723019 - a_b_31770;
+====Order Query: 0 ms , id = 607723019 ==== MyResult orderid: 607723019 {}
+OrderQuery 116 , id = 588302696, Keys: 
+588302696 - goodida_b_32675a_b_26525orderida_g_17779;
+====Order Query: 0 ms , id = 588302696 ==== MyResult orderid: 588302696 {}
+OrderQuery 117 , id = 592486928, Keys: 
+592486928 - a_g_3387;
+====Order Query: 0 ms , id = 592486928 ==== MyResult orderid: 592486928 {}
+OrderQuery 118 , id = 607508317, Keys: 
+607508317 - buyerid;
+====Order Query: 0 ms , id = 607508317 ==== MyResult orderid: 607508317 {[buyerid]:wx-bfdf-24b0057dbb64}
+OrderQuery 119 , id = 627310451, Keys: 
+627310451 - buyerid;
+====Order Query: 0 ms , id = 627310451 ==== MyResult orderid: 627310451 {[buyerid]:wx-ba44-769bc8aa1a68}
+TimePeriod Buyer's Orders 37 , buyer id = tp-b351-6bc63cd1adfa, time: 1465596556-1468624861
+======= TimePeriod query: 1 ms , buyer id = tp-b351-6bc63cd1adfa ===== MyResult List + resultList + ; size: 0
+OrderQuery 120 , id = 612295533, Keys: 
+612295533 - a_b_6984;
+====Order Query: 0 ms , id = 612295533 ==== MyResult orderid: 612295533 {}
+SumOrderQuery 37 , good id = gd-9090-5112ffb45c58 , key= a_b_10387
+== Sum Query : 7 ms, Long: 70 , good id = gd-9090-5112ffb45c58
+OrderQuery 121 , id = 611005136, Keys: 
+611005136 - a_b_19123;
+====Order Query: 0 ms , id = 611005136 ==== MyResult orderid: 611005136 {[a_b_19123]:440b9aa2-1ae4-43ca-bd76-e59575180549}
+OrderQuery 122 , id = 605674500, Keys: 
+605674500 - a_b_16988;
+====Order Query: 0 ms , id = 605674500 ==== MyResult orderid: 605674500 {}
+TimePeriod Buyer's Orders 38 , buyer id = tp-bed8-7407e35884da, time: 1485140459-1488062860
+======= TimePeriod query: 1 ms , buyer id = tp-bed8-7407e35884da ===== MyResult List + resultList + ; size: 0
+OrderQuery 123 , id = 612886215, Keys: 
+612886215 - ;
+====Order Query: 0 ms , id = 612886215 ==== MyResult orderid: 612886215 {}
+OrderQuery 124 , id = 591093443, Keys: 
+591093443 - a_g_23810;
+====Order Query: 0 ms , id = 591093443 ==== MyResult orderid: 591093443 {}
+OrderQuery 125 , id = 623399603, Keys: 
+623399603 - a_b_11255;
+====Order Query: 0 ms , id = 623399603 ==== MyResult orderid: 623399603 {[a_b_11255]:-2070629577}
+OrderQuery 126 , id = 623851508, Keys: 
+623851508 - a_o_30709;
+====Order Query: 0 ms , id = 623851508 ==== MyResult orderid: 623851508 {}
+TimePeriod Buyer's Orders 39 , buyer id = tp-a7e9-3c20ae4959c2, time: 1471788684-1488789334
+======= TimePeriod query: 6 ms , buyer id = tp-a7e9-3c20ae4959c2 ===== MyResult List + resultList + ; size: 100
+SumOrderQuery 38 , good id = dd-b361-fe8070a5ca63 , key= a_g_9718
+Good-Saler all orders 43 , good id: dd-921e-4446ab1ee619  keys: 
+dd-921e-4446ab1ee619 - a_b_26525buyeridcontactphone;
+==Good-Saler all orders: 4 ms, , good id = dd-921e-4446ab1ee619; + resultList + ; size: 73
+SumOrderQuery 39 , good id = gd-a14d-00cea4aecef2 , key= a_g_23810
+OrderQuery 127 , id = 611940701, Keys: 
+611940701 - price;
+====Order Query: 0 ms , id = 611940701 ==== MyResult orderid: 611940701 {[price]:9507.409464426812}
+OrderQuery 128 , id = 590795558, Keys: 
+590795558 - createtime;
+====Order Query: 0 ms , id = 590795558 ==== MyResult orderid: 590795558 {[createtime]:1470330466}
+TimePeriod Buyer's Orders 40 , buyer id = ap-aa7d-573328802810, time: 1460993185-1466078900
+======= TimePeriod query: 0 ms , buyer id = ap-aa7d-573328802810 ===== MyResult List + resultList + ; size: 0
+TimePeriod Buyer's Orders 41 , buyer id = ap-a497-26e523569854, time: 1464667101-1465674528
+======= TimePeriod query: 1 ms , buyer id = ap-a497-26e523569854 ===== MyResult List + resultList + ; size: 0
+SumOrderQuery 40 , good id = dd-b745-55f65cc3a4ef , key= a_b_31770
+== Sum Query : 6 ms, Long: -10489327733 , good id = dd-b745-55f65cc3a4ef
+Good-Saler all orders 44 , good id: gd-a49c-c0940917af25  keys: 
+gd-a49c-c0940917af25 - orderid;
+==Good-Saler all orders: 1 ms, , good id = gd-a49c-c0940917af25; + resultList + ; size: 49
+TimePeriod Buyer's Orders 42 , buyer id = ap-9531-0270a84680e7, time: 1481368759-1483045353
+======= TimePeriod query: 0 ms , buyer id = ap-9531-0270a84680e7 ===== MyResult List + resultList + ; size: 0
+OrderQuery 129 , id = 627912917, Keys: 
+627912917 - address;
+====Order Query: 0 ms , id = 627912917 ==== MyResult orderid: 627912917 {[address]:各种机械洛娜，颗粒剂针锋相对，忍不住喃喃。}
+Good-Saler all orders 45 , good id: al-b082-349b2fe8aa83  keys: 
+al-b082-349b2fe8aa83 - a_g_7032;
+==Good-Saler all orders: 12 ms, , good id = al-b082-349b2fe8aa83; + resultList + ; size: 216
+SumOrderQuery 41 , good id = dd-96fb-99c6a6c2ec9b , key= a_b_1247
+== Sum Query : 2 ms, Long: 56775 , good id = dd-96fb-99c6a6c2ec9b
+TimePeriod Buyer's Orders 43 , buyer id = wx-98b5-f08d7978f2a8, time: 1482090413-1486672982
+======= TimePeriod query: 0 ms , buyer id = wx-98b5-f08d7978f2a8 ===== MyResult List + resultList + ; size: 0
+SumOrderQuery 42 , good id = dd-9d0d-ef2669412f69 , key= a_o_15325
+--Type Error : key a_o_15325, raw value: -0.32, is long: false , Error: java.lang.NumberFormatException: For input string: "-0.32"
+com.alibaba.middleware.race.OrderSystem$TypeException  Not long value, go to Double accumulate
+== Sum Query : 2 ms, Double: -2.1003999999999996 , good id = dd-9d0d-ef2669412f69
+TimePeriod Buyer's Orders 44 , buyer id = ap-80de-fd07dad1fb94, time: 1470178711-1478527529
+======= TimePeriod query: 1 ms , buyer id = ap-80de-fd07dad1fb94 ===== MyResult List + resultList + ; size: 28
+Good-Saler all orders 46 , good id: aye-943b-79eb597a8687  keys: 
+aye-943b-79eb597a8687 - a_g_28133;
+==Good-Saler all orders: 10 ms, , good id = aye-943b-79eb597a8687; + resultList + ; size: 212
+265 queries  takes 733 ms ---

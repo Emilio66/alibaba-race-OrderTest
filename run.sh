@@ -24,5 +24,5 @@ javac -d $BIN/ -cp $JAR @$SRC/sources.list
 #java -cp $BIN:$JAR Parser /home/hadoop/tb/prerun_data/case.0 > screen.out
 #run project as a background process
 #nohup java -cp $BIN:$JAR Tester /home/hadoop/tb/prerun_data/case.0 &
-java -cp $BIN:$JAR Tester /home/hadoop/tb/prerun_data/case.0 > std.out
+java -cp $BIN:$JAR Tester /home/hadoop/tb/prerun_data/case.0 265 > std.out
 echo "program running log is writting into std.out ..."
