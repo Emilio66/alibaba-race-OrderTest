@@ -4,7 +4,9 @@ import model.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -35,28 +37,36 @@ public class Tester {
 
         OrderSystem os = new OrderSystemImpl();
         try {
+
+            SimpleDateFormat time=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            System.out.println(time.format(new Date()));
+
             long start = System.currentTimeMillis();
+
             os.construct(orderFiles, buyerFiles, goodFiles, storePath);
 
             long end = System.currentTimeMillis();
+
             System.out.println("-- Constructing takes " + (end - start) + " ms");
 
 
             System.out.println("-------------- Query Start ------------------");
 
+            System.out.println(time.format(new Date()));
+
             //get case file from argument
-            if(args.length > 0){
+            if (args.length > 0) {
                 File caseFile = new File(args[0]);
                 int num = 50; //default 50 queries
-                if(args.length > 1){
+                if (args.length > 1) {
                     num = Integer.parseInt(args[1]);
                 }
                 List<Query> queries = new Parser(caseFile).generateQueries(num);
 
- 		start = System.currentTimeMillis();
+                start = System.currentTimeMillis();
 
-                for(Query query : queries){
-                    switch (query.Type){
+                for (Query query : queries) {
+                    switch (query.Type) {
 
                         case Query.ORDER:
                             os.queryOrder(((OrderQuery) query).orderId, ((OrderQuery) query).keys);
@@ -64,23 +74,23 @@ public class Tester {
 
                         case Query.GOOD:
                             //query saler's good info, saler-good is unique, no need for saler id
-                            os.queryOrdersBySaler("",((GoodQuery)query).goodId, ((GoodQuery)query).keys);
+                            os.queryOrdersBySaler("", ((GoodQuery) query).goodId, ((GoodQuery) query).keys);
                             break;
 
                         case Query.BUYER:
-                            os.queryOrdersByBuyer(((BuyerQuery)query).startTime, ((BuyerQuery)query).endTime,
+                            os.queryOrdersByBuyer(((BuyerQuery) query).startTime, ((BuyerQuery) query).endTime,
                                     ((BuyerQuery) query).buyerId);
                             break;
                         case Query.SUM:
-                            os.sumOrdersByGood(((SumQuery)query).goodId, ((SumQuery)query).key);
+                            os.sumOrdersByGood(((SumQuery) query).goodId, ((SumQuery) query).key);
                             break;
 
                     }
 
                 }
- 		end = System.currentTimeMillis();
-		System.out.println(num+" queries  takes " + (end - start) + " ms ---");
-            }else {
+                end = System.currentTimeMillis();
+                System.out.println(num + " queries  takes " + (end - start) + " ms ---");
+            } else {
                 System.out.println("--- static query----");
                 // 用例
                 long orderid = 609670049;
