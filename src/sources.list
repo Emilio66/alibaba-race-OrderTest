@@ -5,3 +5,4 @@
 /home/hadoop/singularity/OrderTest/src/model/Query.java
 /home/hadoop/singularity/OrderTest/src/model/SumQuery.java
 /home/hadoop/singularity/OrderTest/src/Tester.java
+/home/hadoop/singularity/OrderTest/src/test/OffHeapTest.java

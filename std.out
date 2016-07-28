@@ -1,0 +1,826 @@
+2016-07-28 12:49:33
+------------------------SYSTEM INFO --------------------------
+Order File:  
+/home/hadoop/tb/order.2.2 size: 36947033
+/home/hadoop/tb/order.1.1 size: 14039972
+/home/hadoop/tb/order.0.3 size: 26805149
+/home/hadoop/tb/order.0.0 size: 10991273
+Total file number: 4
+
+Buyer File:  
+/home/hadoop/tb/buyer.0.0 size: 1048785
+/home/hadoop/tb/buyer.1.1 size: 1007312
+Total file number: 2
+
+Good File:  
+/home/hadoop/tb/good.0.0 size: 1386861
+/home/hadoop/tb/good.1.1 size: 1625691
+/home/hadoop/tb/good.2.2 size: 688283
+Total file number: 3
+
+Store path:  
+/home/hadoop/store size: 4096
+subpath: /home/hadoop/store/1test size: 4096
+subpath: /home/hadoop/store/good_0 size: 3145728
+subpath: /home/hadoop/store/good_1 size: 3145728
+subpath: /home/hadoop/store/good_2 size: 3145728
+subpath: /home/hadoop/store/buyer_0 size: 3145728
+subpath: /home/hadoop/store/buyer_1 size: 3145728
+subpath: /home/hadoop/store/buyer_2 size: 3145728
+subpath: /home/hadoop/store/order_0 size: 20971738
+subpath: /home/hadoop/store/order_1 size: 20971687
+subpath: /home/hadoop/store/order_2 size: 20971831
+subpath: /home/hadoop/store/order_3 size: 20971727
+subpath: /home/hadoop/store/order_4 size: 20971712
+subpath: /home/hadoop/store/order_5 size: 20971735
+subpath: /home/hadoop/store/order_6 size: 20971697
+subpath: /home/hadoop/store/good_3 size: 3145728
+subpath: /home/hadoop/store/good_4 size: 3145728
+subpath: /home/hadoop/store/buyer_3 size: 3145728
+subpath: /home/hadoop/store/buyer_4 size: 3145728
+
+Store name: ' /dev/mapper/centos-home ' ; type : xfs
+Total space in VOLUME: 478193872896
+Free space in VOLUME: 472099008512
+Max memory: 1836056576
+Total memory: 123731968
+Free memory: 121781312
+Available processors: 4
+Linux version 3.10.0-327.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ) #1 SMP Thu Nov 19 22:10:57 UTC 2015
+noop [deadline] cfq 
+-------------------------- Parsing --------------------------
+ Parsing buyer files: 2 , store at /home/hadoop/store/
+0ms elapsed for buyer files.
+ Begin Parsing good files: 3 , store at /home/hadoop/store/
+1ms elapsed for good & buyer files. Parsing order files: 4 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/good_0 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/good_1 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/good_2 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/good_3 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/good_4 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/good_5 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/good_6 , Position: 0
+304ms elapsed for good files parsing 3 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/buyer_0 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/buyer_1 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/buyer_2 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/buyer_3 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/buyer_4 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/buyer_5 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/buyer_6 , Position: 0
+345ms elapsed for buyer files parsing 2 , store at /home/hadoop/store/
+---- Bucket Clean Thread: /home/hadoop/store/order_0 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_1 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_2 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_3 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_4 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_5 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_6 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_7 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_8 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_9 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_10 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_11 , Position: 0
+---- Bucket Clean Thread: /home/hadoop/store/order_12 , Position: 0
+572294128ns elapsed for good files parsing 4 , store at /home/hadoop/store/
+574ms elapsed for Constructing all files.
+ -----------  Parsing END -----------
+/home/hadoop/store/
+path: /home/hadoop/store size: 4096
+subpath: /home/hadoop/store/1test size: 4096
+subpath: /home/hadoop/store/good_0 size: 3145728
+subpath: /home/hadoop/store/good_1 size: 3145728
+subpath: /home/hadoop/store/good_2 size: 3145728
+subpath: /home/hadoop/store/buyer_0 size: 3145728
+subpath: /home/hadoop/store/buyer_1 size: 3145728
+subpath: /home/hadoop/store/buyer_2 size: 3145728
+subpath: /home/hadoop/store/order_0 size: 20971738
+subpath: /home/hadoop/store/order_1 size: 20971687
+subpath: /home/hadoop/store/order_2 size: 20971831
+subpath: /home/hadoop/store/order_3 size: 20971727
+subpath: /home/hadoop/store/order_4 size: 20971712
+subpath: /home/hadoop/store/order_5 size: 20971735
+subpath: /home/hadoop/store/order_6 size: 20971697
+subpath: /home/hadoop/store/good_3 size: 3145728
+subpath: /home/hadoop/store/good_4 size: 3145728
+subpath: /home/hadoop/store/buyer_3 size: 3145728
+subpath: /home/hadoop/store/buyer_4 size: 3145728
+
+
+ ---------- After Constructing: -----------
+Max memory: 1836056576
+Total memory: 773324800
+Free memory: 768145184
+-- Constructing takes 592 ms
+-------------- Query Start ------------------
+2016-07-28 12:49:33
+New Parser: case.0, start 0
+concurrent queries  takes 1 ms ---
+OrderQuery 0 , id = 609670049, Keys: 
+609670049 - description;
+No such Order 609670049
+OrderQuery 1 , id = 612584687, Keys: 
+612584687 - contactphone;
+No such Order 612584687
+OrderQuery 2 , id = 627040903, Keys: 
+627040903 - salerid;
+No such Order 627040903
+SumOrderQuery 0 , good id = al-96e5-7fac3721d4b9 , key= amount
+--Not found goodId: al-96e5-7fac3721d4b9
+OrderQuery 3 , id = 608178205, Keys: 
+608178205 - a_g_17779;
+No such Order 608178205
+SumOrderQuery 1 , good id = aye-9c37-838aa50d1f1e , key= a_g_5814
+--Not found goodId: aye-9c37-838aa50d1f1e
+OrderQuery 4 , id = 611435247, Keys: 
+611435247 - a_o_7517;
+No such Order 611435247
+OrderQuery 5 , id = 609423376, Keys: 
+609423376 - buyername;
+No such Order 609423376
+OrderQuery 6 , id = 590107063, Keys: 
+590107063 - a_g_12146;
+No such Order 590107063
+TimePeriod Buyer's Orders 0 , buyer id = wx-a0e0-6bda77db73ca, time: 1462018520-1473999229
+--Not found buyerId: wx-a0e0-6bda77db73ca
+OrderQuery 7 , id = 593383708, Keys: 
+593383708 - a_o_5497;
+No such Order 593383708
+SumOrderQuery 2 , good id = al-9c4c-ac9ed4b6ad35 , key= offprice
+--Not found goodId: al-9c4c-ac9ed4b6ad35
+Good-Saler all orders 0 , good id: gd-b972-6926df8128c3  keys: 
+gd-b972-6926df8128c3 - a_o_30709a_g_32587;
+--Not found goodId: gd-b972-6926df8128c3
+OrderQuery 8 , id = 607315730, Keys: 
+607315730 - a_b_11255;
+No such Order 607315730
+SumOrderQuery 3 , good id = dd-a27d-835565dfb080 , key= a_b_3503
+--Not found goodId: dd-a27d-835565dfb080
+Good-Saler all orders 1 , good id: gd-80fa-bc88216aa5be  keys: 
+gd-80fa-bc88216aa5be - address;
+--Not found goodId: gd-80fa-bc88216aa5be
+Good-Saler all orders 2 , good id: al-a63c-e1e294d6bcb1  keys: 
+al-a63c-e1e294d6bcb1 - buyername;
+--Not found goodId: al-a63c-e1e294d6bcb1
+TimePeriod Buyer's Orders 1 , buyer id = tp-a20e-8248d4665332, time: 1470285742-1478898941
+--Not found buyerId: tp-a20e-8248d4665332
+OrderQuery 9 , id = 588664537, Keys: 
+588664537 - a_o_22304;
+No such Order 588664537
+SumOrderQuery 4 , good id = dd-941e-7fc422e8afc6 , key= a_b_31770
+--Not found goodId: dd-941e-7fc422e8afc6
+OrderQuery 10 , id = 592593591, Keys: 
+592593591 - a_o_18278;
+No such Order 592593591
+SumOrderQuery 5 , good id = aye-a8da-815f1b1f77a0 , key= a_o_22304
+--Not found goodId: aye-a8da-815f1b1f77a0
+OrderQuery 11 , id = 605697086, Keys: 
+605697086 - a_b_30900;
+No such Order 605697086
+OrderQuery 12 , id = 589612270, Keys: 
+589612270 - a_b_20445;
+No such Order 589612270
+SumOrderQuery 6 , good id = dd-8ca3-2bc2afdd8802 , key= a_b_22322
+--Not found goodId: dd-8ca3-2bc2afdd8802
+OrderQuery 13 , id = 625705444, Keys: 
+625705444 - orderid;
+No such Order 625705444
+Good-Saler all orders 3 , good id: al-bba5-9856daeafce1  keys: 
+al-bba5-9856daeafce1 - buyerid;
+--Not found goodId: al-bba5-9856daeafce1
+Good-Saler all orders 4 , good id: aye-8837-3aca358bfad3  keys: 
+aye-8837-3aca358bfad3 - a_o_12490;
+--Not found goodId: aye-8837-3aca358bfad3
+OrderQuery 14 , id = 590939373, Keys: 
+590939373 - a_b_32675;
+No such Order 590939373
+Good-Saler all orders 5 , good id: aye-a12d-a8a02bf3d6db  keys: 
+aye-a12d-a8a02bf3d6db - a_o_30709;
+--Not found goodId: aye-a12d-a8a02bf3d6db
+OrderQuery 15 , id = 591628866, Keys: 
+591628866 - a_b_30900;
+No such Order 591628866
+TimePeriod Buyer's Orders 2 , buyer id = ap-b5a0-67275022beac, time: 1466989179-1484696090
+--Not found buyerId: ap-b5a0-67275022beac
+OrderQuery 16 , id = 610847057, Keys: 
+610847057 - a_o_28730;
+No such Order 610847057
+OrderQuery 17 , id = 607797352, Keys: 
+607797352 - buyerid;
+No such Order 607797352
+OrderQuery 18 , id = 610303538, Keys: 
+610303538 - price;
+No such Order 610303538
+OrderQuery 19 , id = 590835445, Keys: 
+590835445 - a_b_19123;
+No such Order 590835445
+OrderQuery 20 , id = 609702347, Keys: 
+609702347 - amount;
+No such Order 609702347
+OrderQuery 21 , id = 610406037, Keys: 
+610406037 - donebuyerid;
+No such Order 610406037
+OrderQuery 22 , id = 608432847, Keys: 
+608432847 - a_g_14195;
+No such Order 608432847
+TimePeriod Buyer's Orders 3 , buyer id = tp-89c2-0a07ea42f9c3, time: 1479428641-1481958725
+--Not found buyerId: tp-89c2-0a07ea42f9c3
+TimePeriod Buyer's Orders 4 , buyer id = wx-9d71-9e8d3ad64d2a, time: 1458715441-1486968261
+--Not found buyerId: wx-9d71-9e8d3ad64d2a
+OrderQuery 23 , id = 607726953, Keys: 
+607726953 - a_g_24863;
+No such Order 607726953
+OrderQuery 24 , id = 608153033, Keys: 
+608153033 - a_o_9238;
+No such Order 608153033
+TimePeriod Buyer's Orders 5 , buyer id = ap-936f-ca800485bc15, time: 1462588843-1462780066
+--Not found buyerId: ap-936f-ca800485bc15
+Good-Saler all orders 6 , good id: dd-892b-e6f4e358d986  keys: 
+dd-892b-e6f4e358d986 - a_b_30900pricea_b_6984salerida_g_32587;
+--Not found goodId: dd-892b-e6f4e358d986
+Good-Saler all orders 7 , good id: dd-9cef-9771a79d660f  keys: 
+dd-9cef-9771a79d660f - a_b_26525;
+--Not found goodId: dd-9cef-9771a79d660f
+OrderQuery 25 , id = 608357645, Keys: 
+608357645 - a_g_8700;
+No such Order 608357645
+Good-Saler all orders 8 , good id: gd-9099-6d8efdcefa00  keys: 
+gd-9099-6d8efdcefa00 - a_o_5449;
+--Not found goodId: gd-9099-6d8efdcefa00
+TimePeriod Buyer's Orders 6 , buyer id = tp-b0a2-fd0ca6720971, time: 1467791748-1481816836
+--Not found buyerId: tp-b0a2-fd0ca6720971
+Good-Saler all orders 9 , good id: aye-91a4-4cef71053f97  keys: 
+aye-91a4-4cef71053f97 - contactphone;
+--Not found goodId: aye-91a4-4cef71053f97
+TimePeriod Buyer's Orders 7 , buyer id = ap-aa7d-573328802810, time: 1480449094-1482109216
+--Not found buyerId: ap-aa7d-573328802810
+OrderQuery 26 , id = 592341557, Keys: 
+592341557 - a_g_27873;
+No such Order 592341557
+OrderQuery 27 , id = 587905148, Keys: 
+587905148 - createtime;
+No such Order 587905148
+TimePeriod Buyer's Orders 8 , buyer id = ap-8d0e-8c21f0683fb7, time: 1469841832-1475705944
+--Not found buyerId: ap-8d0e-8c21f0683fb7
+SumOrderQuery 7 , good id = al-89e7-f743b7a39080 , key= a_b_11255
+--Not found goodId: al-89e7-f743b7a39080
+OrderQuery 28 , id = 626235933, Keys: 
+626235933 - a_o_22304;
+No such Order 626235933
+OrderQuery 29 , id = 627588689, Keys: 
+627588689 - a_o_3337;
+No such Order 627588689
+SumOrderQuery 8 , good id = al-85bd-377adfd2bc4f , key= price
+--Not found goodId: al-85bd-377adfd2bc4f
+SumOrderQuery 9 , good id = aye-ac59-482600706e59 , key= a_b_22724
+--Not found goodId: aye-ac59-482600706e59
+Good-Saler all orders 10 , good id: gd-bcc9-82d24f7ed5a7  keys: 
+gd-bcc9-82d24f7ed5a7 - amount;
+--Not found goodId: gd-bcc9-82d24f7ed5a7
+SumOrderQuery 10 , good id = aye-9cda-56d7ce06059d , key= a_b_31770
+--Not found goodId: aye-9cda-56d7ce06059d
+Good-Saler all orders 11 , good id: dd-864e-87354f4afac5  keys: 
+dd-864e-87354f4afac5 - *;
+--Not found goodId: dd-864e-87354f4afac5
+TimePeriod Buyer's Orders 9 , buyer id = ap-8942-7d1052e51407, time: 1459380203-1481976408
+--Not found buyerId: ap-8942-7d1052e51407
+OrderQuery 30 , id = 623487349, Keys: 
+623487349 - a_g_24863;
+No such Order 623487349
+OrderQuery 31 , id = 588540311, Keys: 
+588540311 - a_g_25186;
+No such Order 588540311
+SumOrderQuery 11 , good id = al-801d-8fefc2129b54 , key= a_b_7337
+--Not found goodId: al-801d-8fefc2129b54
+OrderQuery 32 , id = 604505632, Keys: 
+604505632 - contactphone;
+No such Order 604505632
+Good-Saler all orders 12 , good id: gd-9ed4-3231e62ea250  keys: 
+gd-9ed4-3231e62ea250 - address;
+--Not found goodId: gd-9ed4-3231e62ea250
+OrderQuery 33 , id = 606094022, Keys: 
+606094022 - amount;
+No such Order 606094022
+TimePeriod Buyer's Orders 10 , buyer id = tp-9d24-ad70ab4eb984, time: 1463805968-1479686311
+--Not found buyerId: tp-9d24-ad70ab4eb984
+SumOrderQuery 12 , good id = aye-abd1-5362b751f6e9 , key= a_g_31975
+--Not found goodId: aye-abd1-5362b751f6e9
+OrderQuery 34 , id = 607309226, Keys: 
+607309226 - a_g_7839;
+No such Order 607309226
+OrderQuery 35 , id = 626557842, Keys: 
+626557842 - good_name;
+No such Order 626557842
+Good-Saler all orders 13 , good id: gd-a3ed-1beb698256ce  keys: 
+gd-a3ed-1beb698256ce - a_g_5814;
+--Not found goodId: gd-a3ed-1beb698256ce
+OrderQuery 36 , id = 624455500, Keys: 
+624455500 - a_g_4826;
+No such Order 624455500
+SumOrderQuery 13 , good id = al-95d0-21378966d913 , key= a_g_10209
+--Not found goodId: al-95d0-21378966d913
+OrderQuery 37 , id = 613014342, Keys: 
+613014342 - a_o_9238;
+No such Order 613014342
+TimePeriod Buyer's Orders 11 , buyer id = tp-af4f-a8991951b14e, time: 1459595634-1460634732
+--Not found buyerId: tp-af4f-a8991951b14e
+OrderQuery 38 , id = 592327120, Keys: 
+592327120 - goodida_g_10209a_b_11255a_b_7337a_o_4699;
+No such Order 592327120
+Good-Saler all orders 14 , good id: al-a3c1-e55077d2dd60  keys: 
+al-a3c1-e55077d2dd60 - buyername;
+--Not found goodId: al-a3c1-e55077d2dd60
+SumOrderQuery 14 , good id = gd-a87a-3d298798dc53 , key= a_g_7839
+--Not found goodId: gd-a87a-3d298798dc53
+Good-Saler all orders 15 , good id: al-bae1-7b0b930de7df  keys: 
+al-bae1-7b0b930de7df - a_g_10209a_b_995a_g_28464;
+--Not found goodId: al-bae1-7b0b930de7df
+TimePeriod Buyer's Orders 12 , buyer id = ap-ad9e-df1f838acd0b, time: 1478093361-1484864213
+--Not found buyerId: ap-ad9e-df1f838acd0b
+SumOrderQuery 15 , good id = gd-b3f9-c60b355a54ce , key= a_g_28464
+--Not found goodId: gd-b3f9-c60b355a54ce
+OrderQuery 39 , id = 592482471, Keys: 
+592482471 - a_b_6984;
+No such Order 592482471
+OrderQuery 40 , id = 607260502, Keys: 
+607260502 - orderid;
+No such Order 607260502
+OrderQuery 41 , id = 589400538, Keys: 
+589400538 - amount;
+No such Order 589400538
+OrderQuery 42 , id = 590686790, Keys: 
+590686790 - good_name;
+No such Order 590686790
+Good-Saler all orders 16 , good id: dd-a31d-aab29201513a  keys: 
+dd-a31d-aab29201513a - a_b_6857;
+--Not found goodId: dd-a31d-aab29201513a
+OrderQuery 43 , id = 592807571, Keys: 
+592807571 - goodid;
+No such Order 592807571
+SumOrderQuery 16 , good id = dd-9884-bbb6a9407bfd , key= a_g_10209
+--Not found goodId: dd-9884-bbb6a9407bfd
+OrderQuery 44 , id = 624611943, Keys: 
+624611943 - buyerid;
+No such Order 624611943
+Good-Saler all orders 17 , good id: gd-a019-95776b8b3be1  keys: 
+gd-a019-95776b8b3be1 - buyerid;
+--Not found goodId: gd-a019-95776b8b3be1
+OrderQuery 45 , id = 606900618, Keys: 
+606900618 - buyerid;
+No such Order 606900618
+OrderQuery 46 , id = 589592108, Keys: 
+589592108 - amount;
+No such Order 589592108
+TimePeriod Buyer's Orders 13 , buyer id = wx-ac7c-38fdfd0c4b42, time: 1466701728-1472684333
+--Not found buyerId: wx-ac7c-38fdfd0c4b42
+TimePeriod Buyer's Orders 14 , buyer id = ap-ab47-6996ba1fbc26, time: 1463859812-1475352842
+--Not found buyerId: ap-ab47-6996ba1fbc26
+OrderQuery 47 , id = 607338593, Keys: 
+607338593 - a_b_20599;
+No such Order 607338593
+Good-Saler all orders 18 , good id: dd-ae50-6dff62a4ba2a  keys: 
+dd-ae50-6dff62a4ba2a - address;
+--Not found goodId: dd-ae50-6dff62a4ba2a
+Good-Saler all orders 19 , good id: al-bd3c-36d9c0414388  keys: 
+al-bd3c-36d9c0414388 - orderid;
+--Not found goodId: al-bd3c-36d9c0414388
+Good-Saler all orders 20 , good id: aye-b09c-2d44932ff52b  keys: 
+aye-b09c-2d44932ff52b - a_b_19123;
+--Not found goodId: aye-b09c-2d44932ff52b
+SumOrderQuery 17 , good id = dd-833b-baff85d9fc3d , key= a_b_6984
+--Not found goodId: dd-833b-baff85d9fc3d
+Good-Saler all orders 21 , good id: al-80f1-c66292edd781  keys: 
+al-80f1-c66292edd781 - amount;
+--Not found goodId: al-80f1-c66292edd781
+OrderQuery 48 , id = 611036786, Keys: 
+611036786 - a_g_7839;
+No such Order 611036786
+TimePeriod Buyer's Orders 15 , buyer id = ap-ba79-f0d3ae8d907a, time: 1458993304-1483205589
+--Not found buyerId: ap-ba79-f0d3ae8d907a
+OrderQuery 49 , id = 610411175, Keys: 
+610411175 - buyerid;
+No such Order 610411175
+SumOrderQuery 18 , good id = dd-8b27-74d1d37ba476 , key= a_b_11255
+--Not found goodId: dd-8b27-74d1d37ba476
+Good-Saler all orders 22 , good id: gd-8569-383552ae8f46  keys: 
+gd-8569-383552ae8f46 - a_o_4699a_b_6421;
+--Not found goodId: gd-8569-383552ae8f46
+OrderQuery 50 , id = 612221941, Keys: 
+612221941 - a_b_30900;
+No such Order 612221941
+OrderQuery 51 , id = 610184876, Keys: 
+610184876 - description;
+No such Order 610184876
+OrderQuery 52 , id = 591652117, Keys: 
+591652117 - salerid;
+No such Order 591652117
+OrderQuery 53 , id = 625549902, Keys: 
+625549902 - a_g_7839;
+No such Order 625549902
+OrderQuery 54 , id = 624152321, Keys: 
+624152321 - a_g_764;
+No such Order 624152321
+OrderQuery 55 , id = 591871423, Keys: 
+591871423 - orderid;
+No such Order 591871423
+Good-Saler all orders 23 , good id: gd-bf9f-a61f9127e18f  keys: 
+gd-bf9f-a61f9127e18f - contactphone;
+--Not found goodId: gd-bf9f-a61f9127e18f
+OrderQuery 56 , id = 589056162, Keys: 
+589056162 - a_b_26525;
+No such Order 589056162
+SumOrderQuery 19 , good id = aye-88b5-c166afdb853d , key= a_b_7337
+--Not found goodId: aye-88b5-c166afdb853d
+OrderQuery 57 , id = 623902613, Keys: 
+623902613 - a_g_10209;
+No such Order 623902613
+SumOrderQuery 20 , good id = aye-a49f-4eb19e540578 , key= a_g_23810
+--Not found goodId: aye-a49f-4eb19e540578
+SumOrderQuery 21 , good id = dd-b74e-ee1a21b160ef , key= a_b_26525
+--Not found goodId: dd-b74e-ee1a21b160ef
+OrderQuery 58 , id = 611398150, Keys: 
+611398150 - a_g_28464;
+No such Order 611398150
+OrderQuery 59 , id = 605345632, Keys: 
+605345632 - a_b_6984;
+No such Order 605345632
+OrderQuery 60 , id = 605385198, Keys: 
+605385198 - goodid;
+No such Order 605385198
+OrderQuery 61 , id = 590300507, Keys: 
+590300507 - goodid;
+No such Order 590300507
+OrderQuery 62 , id = 588860160, Keys: 
+588860160 - buyerid;
+No such Order 588860160
+SumOrderQuery 22 , good id = dd-950a-bae7f97b93bc , key= amount
+--Not found goodId: dd-950a-bae7f97b93bc
+Good-Saler all orders 24 , good id: al-846c-c757849dd242  keys: 
+al-846c-c757849dd242 - address;
+--Not found goodId: al-846c-c757849dd242
+OrderQuery 63 , id = 610013681, Keys: 
+610013681 - a_o_12490;
+No such Order 610013681
+OrderQuery 64 , id = 590652786, Keys: 
+590652786 - amount;
+No such Order 590652786
+OrderQuery 65 , id = 589777796, Keys: 
+589777796 - a_g_24863;
+No such Order 589777796
+OrderQuery 66 , id = 590859875, Keys: 
+590859875 - a_b_20599;
+No such Order 590859875
+OrderQuery 67 , id = 591177879, Keys: 
+591177879 - good_name;
+No such Order 591177879
+Good-Saler all orders 25 , good id: al-a6ce-841e63189baa  keys: 
+al-a6ce-841e63189baa - a_b_10930;
+--Not found goodId: al-a6ce-841e63189baa
+OrderQuery 68 , id = 625705575, Keys: 
+625705575 - a_b_20599a_g_27873a_g_17779;
+No such Order 625705575
+TimePeriod Buyer's Orders 16 , buyer id = tp-b1b7-999f3d9e6a55, time: 1470220591-1486066164
+--Not found buyerId: tp-b1b7-999f3d9e6a55
+OrderQuery 69 , id = 609527434, Keys: 
+609527434 - a_g_18641;
+No such Order 609527434
+OrderQuery 70 , id = 623623261, Keys: 
+623623261 - done;
+No such Order 623623261
+TimePeriod Buyer's Orders 17 , buyer id = wx-a4ce-1f9358f2e64d, time: 1459733752-1486622707
+--Not found buyerId: wx-a4ce-1f9358f2e64d
+TimePeriod Buyer's Orders 18 , buyer id = wx-bed3-6b8147adcc64, time: 1460256117-1485843209
+--Not found buyerId: wx-bed3-6b8147adcc64
+Good-Saler all orders 26 , good id: al-b29b-5072cb563382  keys: 
+al-b29b-5072cb563382 - buyerid;
+--Not found goodId: al-b29b-5072cb563382
+Good-Saler all orders 27 , good id: aye-924c-872862ce9101  keys: 
+aye-924c-872862ce9101 - buyerid;
+--Not found goodId: aye-924c-872862ce9101
+SumOrderQuery 23 , good id = dd-af55-aac8018b7a8f , key= amount
+--Not found goodId: dd-af55-aac8018b7a8f
+OrderQuery 71 , id = 610715568, Keys: 
+610715568 - amountaddressbuyerida_g_24863offprice;
+No such Order 610715568
+OrderQuery 72 , id = 627569764, Keys: 
+627569764 - contactphone;
+No such Order 627569764
+OrderQuery 73 , id = 591709336, Keys: 
+591709336 - offprice;
+No such Order 591709336
+OrderQuery 74 , id = 605114679, Keys: 
+605114679 - orderid;
+No such Order 605114679
+OrderQuery 75 , id = 610056657, Keys: 
+610056657 - a_g_10209;
+No such Order 610056657
+Good-Saler all orders 28 , good id: aye-9b53-a4f0d1364296  keys: 
+aye-9b53-a4f0d1364296 - buyername;
+--Not found goodId: aye-9b53-a4f0d1364296
+Good-Saler all orders 29 , good id: aye-9cf6-3745c62c8fe4  keys: 
+aye-9cf6-3745c62c8fe4 - goodida_b_18401a_g_17779;
+--Not found goodId: aye-9cf6-3745c62c8fe4
+OrderQuery 76 , id = 612781770, Keys: 
+612781770 - contactphone;
+No such Order 612781770
+OrderQuery 77 , id = 611668682, Keys: 
+611668682 - a_g_1209;
+No such Order 611668682
+SumOrderQuery 24 , good id = al-a347-efa7ebc2d021 , key= price
+--Not found goodId: al-a347-efa7ebc2d021
+OrderQuery 78 , id = 589116552, Keys: 
+589116552 - goodid;
+No such Order 589116552
+TimePeriod Buyer's Orders 19 , buyer id = tp-b0a2-fd0ca6720971, time: 1459353413-1477624470
+--Not found buyerId: tp-b0a2-fd0ca6720971
+TimePeriod Buyer's Orders 20 , buyer id = ap-891b-f01510c745e6, time: 1458956210-1467127226
+--Not found buyerId: ap-891b-f01510c745e6
+OrderQuery 79 , id = 607517115, Keys: 
+607517115 - a_b_17990;
+No such Order 607517115
+TimePeriod Buyer's Orders 21 , buyer id = ap-a70b-7fee9ff65ab6, time: 1473806344-1476252628
+--Not found buyerId: ap-a70b-7fee9ff65ab6
+OrderQuery 80 , id = 613184122, Keys: 
+613184122 - address;
+No such Order 613184122
+OrderQuery 81 , id = 606576218, Keys: 
+606576218 - a_b_6857;
+No such Order 606576218
+TimePeriod Buyer's Orders 22 , buyer id = wx-a281-4eefb711a656, time: 1475367083-1477719993
+--Not found buyerId: wx-a281-4eefb711a656
+OrderQuery 82 , id = 623563802, Keys: 
+623563802 - a_g_7032;
+No such Order 623563802
+SumOrderQuery 25 , good id = al-b253-8e6f332e6bfd , key= a_o_5497
+--Not found goodId: al-b253-8e6f332e6bfd
+OrderQuery 83 , id = 607110831, Keys: 
+607110831 - createtime;
+No such Order 607110831
+OrderQuery 84 , id = 610033706, Keys: 
+610033706 - a_b_31770;
+No such Order 610033706
+Good-Saler all orders 30 , good id: dd-864e-87354f4afac5  keys: 
+dd-864e-87354f4afac5 - a_g_3387;
+--Not found goodId: dd-864e-87354f4afac5
+OrderQuery 85 , id = 626410265, Keys: 
+626410265 - a_o_4699;
+No such Order 626410265
+OrderQuery 86 , id = 623874480, Keys: 
+623874480 - buyerid;
+No such Order 623874480
+OrderQuery 87 , id = 589195691, Keys: 
+589195691 - a_g_24863;
+No such Order 589195691
+TimePeriod Buyer's Orders 23 , buyer id = tp-a035-fc0b3f19a131, time: 1469882017-1479508015
+--Not found buyerId: tp-a035-fc0b3f19a131
+TimePeriod Buyer's Orders 24 , buyer id = ap-b4cf-a793d5e945c6, time: 1471212620-1478181733
+--Not found buyerId: ap-b4cf-a793d5e945c6
+OrderQuery 88 , id = 603991983, Keys: 
+603991983 - buyerid;
+No such Order 603991983
+OrderQuery 89 , id = 587973257, Keys: 
+587973257 - a_g_27122;
+No such Order 587973257
+TimePeriod Buyer's Orders 25 , buyer id = wx-b36f-3bd17ff7b8a5, time: 1459678509-1474709450
+--Not found buyerId: wx-b36f-3bd17ff7b8a5
+Good-Saler all orders 31 , good id: aye-9f38-8dd4f65c0371  keys: 
+aye-9f38-8dd4f65c0371 - a_g_17438;
+--Not found goodId: aye-9f38-8dd4f65c0371
+SumOrderQuery 26 , good id = al-950f-5924be431212 , key= a_g_10839
+--Not found goodId: al-950f-5924be431212
+OrderQuery 90 , id = 589433602, Keys: 
+589433602 - a_b_11255;
+No such Order 589433602
+SumOrderQuery 27 , good id = dd-8ad6-8de99e8d7dad , key= amount
+--Not found goodId: dd-8ad6-8de99e8d7dad
+SumOrderQuery 28 , good id = gd-bd7e-4e1dc32f21dd , key= a_b_26525
+--Not found goodId: gd-bd7e-4e1dc32f21dd
+SumOrderQuery 29 , good id = gd-9772-90ee5a9f7548 , key= a_g_1209
+--Not found goodId: gd-9772-90ee5a9f7548
+SumOrderQuery 30 , good id = gd-945a-ee26dd301c87 , key= a_g_8697
+--Not found goodId: gd-945a-ee26dd301c87
+OrderQuery 91 , id = 612741041, Keys: 
+612741041 - goodida_o_30709donea_g_24863;
+No such Order 612741041
+TimePeriod Buyer's Orders 26 , buyer id = wx-9ff4-30089f1ffb00, time: 1479231494-1480704035
+--Not found buyerId: wx-9ff4-30089f1ffb00
+SumOrderQuery 31 , good id = dd-8d26-a7be1a155f5d , key= a_o_18278
+--Not found goodId: dd-8d26-a7be1a155f5d
+TimePeriod Buyer's Orders 27 , buyer id = ap-a246-1e20203d171a, time: 1477398103-1484333609
+--Not found buyerId: ap-a246-1e20203d171a
+OrderQuery 92 , id = 590772554, Keys: 
+590772554 - buyerid;
+No such Order 590772554
+SumOrderQuery 32 , good id = gd-91a1-ebd2c18c3e0c , key= a_o_21378
+--Not found goodId: gd-91a1-ebd2c18c3e0c
+OrderQuery 93 , id = 605327070, Keys: 
+605327070 - a_b_6984;
+No such Order 605327070
+TimePeriod Buyer's Orders 28 , buyer id = ap-8942-7d1052e51407, time: 1466839589-1470683847
+--Not found buyerId: ap-8942-7d1052e51407
+OrderQuery 94 , id = 605463811, Keys: 
+605463811 - amounta_g_10839buyerida_o_9238;
+No such Order 605463811
+OrderQuery 95 , id = 590055828, Keys: 
+590055828 - price;
+No such Order 590055828
+OrderQuery 96 , id = 626671821, Keys: 
+626671821 - salerid;
+No such Order 626671821
+OrderQuery 97 , id = 612401666, Keys: 
+612401666 - address;
+No such Order 612401666
+OrderQuery 98 , id = 611003094, Keys: 
+611003094 - a_b_6984;
+No such Order 611003094
+TimePeriod Buyer's Orders 29 , buyer id = tp-84c3-0d31b23de02f, time: 1467743856-1472824625
+--Not found buyerId: tp-84c3-0d31b23de02f
+Good-Saler all orders 32 , good id: aye-b3c5-6097f6e9f29a  keys: 
+aye-b3c5-6097f6e9f29a - contactphone;
+--Not found goodId: aye-b3c5-6097f6e9f29a
+OrderQuery 99 , id = 610845174, Keys: 
+610845174 - a_g_28464;
+No such Order 610845174
+OrderQuery 100 , id = 609863438, Keys: 
+609863438 - address;
+No such Order 609863438
+TimePeriod Buyer's Orders 30 , buyer id = ap-a93f-ffa574a2322b, time: 1463639450-1487654343
+--Not found buyerId: ap-a93f-ffa574a2322b
+Good-Saler all orders 33 , good id: dd-956c-6db0336a15a6  keys: 
+dd-956c-6db0336a15a6 - buyerid;
+--Not found goodId: dd-956c-6db0336a15a6
+OrderQuery 101 , id = 604905159, Keys: 
+604905159 - description;
+No such Order 604905159
+Good-Saler all orders 34 , good id: dd-9b57-3043fd850482  keys: 
+dd-9b57-3043fd850482 - salerid;
+--Not found goodId: dd-9b57-3043fd850482
+TimePeriod Buyer's Orders 31 , buyer id = wx-81e2-12d44301a03c, time: 1462951939-1472859297
+--Not found buyerId: wx-81e2-12d44301a03c
+SumOrderQuery 33 , good id = al-9757-011f6c2ed581 , key= a_b_6984
+--Not found goodId: al-9757-011f6c2ed581
+OrderQuery 102 , id = 623324410, Keys: 
+623324410 - a_b_31770;
+No such Order 623324410
+OrderQuery 103 , id = 589700371, Keys: 
+589700371 - a_b_10930;
+No such Order 589700371
+Good-Saler all orders 35 , good id: gd-bb89-ffb186b5fcc3  keys: 
+gd-bb89-ffb186b5fcc3 - amount;
+--Not found goodId: gd-bb89-ffb186b5fcc3
+TimePeriod Buyer's Orders 32 , buyer id = ap-9f1b-a68c3033514d, time: 1466921877-1482575967
+--Not found buyerId: ap-9f1b-a68c3033514d
+Good-Saler all orders 36 , good id: aye-8b9b-5ccb1dbddc6b  keys: 
+aye-8b9b-5ccb1dbddc6b - createtime;
+--Not found goodId: aye-8b9b-5ccb1dbddc6b
+SumOrderQuery 34 , good id = aye-8566-ed379560d2ce , key= a_g_10209
+--Not found goodId: aye-8566-ed379560d2ce
+OrderQuery 104 , id = 611220024, Keys: 
+611220024 - a_g_28464;
+No such Order 611220024
+Good-Saler all orders 37 , good id: aye-9430-2751caecbae4  keys: 
+aye-9430-2751caecbae4 - a_b_6984;
+--Not found goodId: aye-9430-2751caecbae4
+Good-Saler all orders 38 , good id: gd-8dba-852cf919f4fe  keys: 
+gd-8dba-852cf919f4fe - buyerid;
+--Not found goodId: gd-8dba-852cf919f4fe
+Good-Saler all orders 39 , good id: gd-b01f-eae560f4c9cb  keys: 
+gd-b01f-eae560f4c9cb - a_g_8697doneorderida_g_28464;
+--Not found goodId: gd-b01f-eae560f4c9cb
+TimePeriod Buyer's Orders 33 , buyer id = tp-a683-ff639f6a485e, time: 1467653263-1483410307
+--Not found buyerId: tp-a683-ff639f6a485e
+OrderQuery 105 , id = 605996015, Keys: 
+605996015 - buyerid;
+No such Order 605996015
+TimePeriod Buyer's Orders 34 , buyer id = wx-ba51-9c803779649d, time: 1472303670-1474194505
+--Not found buyerId: wx-ba51-9c803779649d
+SumOrderQuery 35 , good id = gd-bf92-80b19b7c4c95 , key= offprice
+--Not found goodId: gd-bf92-80b19b7c4c95
+OrderQuery 106 , id = 590485274, Keys: 
+590485274 - salerid;
+No such Order 590485274
+OrderQuery 107 , id = 610786916, Keys: 
+610786916 - orderid;
+No such Order 610786916
+OrderQuery 108 , id = 592532377, Keys: 
+592532377 - a_g_17779;
+No such Order 592532377
+OrderQuery 109 , id = 592644042, Keys: 
+592644042 - a_b_31770;
+No such Order 592644042
+OrderQuery 110 , id = 608704592, Keys: 
+608704592 - goodid;
+No such Order 608704592
+OrderQuery 111 , id = 607651879, Keys: 
+607651879 - a_g_23810;
+No such Order 607651879
+SumOrderQuery 36 , good id = aye-8aa1-5f19dc6bd743 , key= a_o_11862
+--Not found goodId: aye-8aa1-5f19dc6bd743
+Good-Saler all orders 40 , good id: dd-941e-e97aabfd560d  keys: 
+dd-941e-e97aabfd560d - amount;
+--Not found goodId: dd-941e-e97aabfd560d
+OrderQuery 112 , id = 625838976, Keys: 
+625838976 - a_o_3337;
+No such Order 625838976
+Good-Saler all orders 41 , good id: dd-b1a5-1d54829c7271  keys: 
+dd-b1a5-1d54829c7271 - buyernamea_b_11255a_o_4699contactphone;
+--Not found goodId: dd-b1a5-1d54829c7271
+OrderQuery 113 , id = 590680940, Keys: 
+590680940 - createtime;
+No such Order 590680940
+TimePeriod Buyer's Orders 35 , buyer id = wx-a420-c4fcbb4fb490, time: 1464132962-1470849163
+--Not found buyerId: wx-a420-c4fcbb4fb490
+Good-Saler all orders 42 , good id: al-b9b8-f1d0e25f59a3  keys: 
+al-b9b8-f1d0e25f59a3 - buyername;
+--Not found goodId: al-b9b8-f1d0e25f59a3
+OrderQuery 114 , id = 612387041, Keys: 
+612387041 - a_o_5497orderid;
+No such Order 612387041
+TimePeriod Buyer's Orders 36 , buyer id = wx-8772-9546f790fdaf, time: 1469757910-1473664102
+--Not found buyerId: wx-8772-9546f790fdaf
+OrderQuery 115 , id = 607723019, Keys: 
+607723019 - a_b_31770;
+No such Order 607723019
+OrderQuery 116 , id = 588302696, Keys: 
+588302696 - goodida_b_32675a_b_26525orderida_g_17779;
+No such Order 588302696
+OrderQuery 117 , id = 592486928, Keys: 
+592486928 - a_g_3387;
+No such Order 592486928
+OrderQuery 118 , id = 607508317, Keys: 
+607508317 - buyerid;
+No such Order 607508317
+OrderQuery 119 , id = 627310451, Keys: 
+627310451 - buyerid;
+No such Order 627310451
+TimePeriod Buyer's Orders 37 , buyer id = tp-b351-6bc63cd1adfa, time: 1465596556-1468624861
+--Not found buyerId: tp-b351-6bc63cd1adfa
+OrderQuery 120 , id = 612295533, Keys: 
+612295533 - a_b_6984;
+No such Order 612295533
+SumOrderQuery 37 , good id = gd-9090-5112ffb45c58 , key= a_b_10387
+--Not found goodId: gd-9090-5112ffb45c58
+OrderQuery 121 , id = 611005136, Keys: 
+611005136 - a_b_19123;
+No such Order 611005136
+OrderQuery 122 , id = 605674500, Keys: 
+605674500 - a_b_16988;
+No such Order 605674500
+TimePeriod Buyer's Orders 38 , buyer id = tp-bed8-7407e35884da, time: 1485140459-1488062860
+--Not found buyerId: tp-bed8-7407e35884da
+OrderQuery 123 , id = 612886215, Keys: 
+612886215 - ;
+No such Order 612886215
+OrderQuery 124 , id = 591093443, Keys: 
+591093443 - a_g_23810;
+No such Order 591093443
+OrderQuery 125 , id = 623399603, Keys: 
+623399603 - a_b_11255;
+No such Order 623399603
+OrderQuery 126 , id = 623851508, Keys: 
+623851508 - a_o_30709;
+No such Order 623851508
+TimePeriod Buyer's Orders 39 , buyer id = tp-a7e9-3c20ae4959c2, time: 1471788684-1488789334
+--Not found buyerId: tp-a7e9-3c20ae4959c2
+SumOrderQuery 38 , good id = dd-b361-fe8070a5ca63 , key= a_g_9718
+--Not found goodId: dd-b361-fe8070a5ca63
+Good-Saler all orders 43 , good id: dd-921e-4446ab1ee619  keys: 
+dd-921e-4446ab1ee619 - a_b_26525buyeridcontactphone;
+--Not found goodId: dd-921e-4446ab1ee619
+SumOrderQuery 39 , good id = gd-a14d-00cea4aecef2 , key= a_g_23810
+--Not found goodId: gd-a14d-00cea4aecef2
+OrderQuery 127 , id = 611940701, Keys: 
+611940701 - price;
+No such Order 611940701
+OrderQuery 128 , id = 590795558, Keys: 
+590795558 - createtime;
+No such Order 590795558
+TimePeriod Buyer's Orders 40 , buyer id = ap-aa7d-573328802810, time: 1460993185-1466078900
+--Not found buyerId: ap-aa7d-573328802810
+TimePeriod Buyer's Orders 41 , buyer id = ap-a497-26e523569854, time: 1464667101-1465674528
+--Not found buyerId: ap-a497-26e523569854
+SumOrderQuery 40 , good id = dd-b745-55f65cc3a4ef , key= a_b_31770
+--Not found goodId: dd-b745-55f65cc3a4ef
+Good-Saler all orders 44 , good id: gd-a49c-c0940917af25  keys: 
+gd-a49c-c0940917af25 - orderid;
+--Not found goodId: gd-a49c-c0940917af25
+TimePeriod Buyer's Orders 42 , buyer id = ap-9531-0270a84680e7, time: 1481368759-1483045353
+--Not found buyerId: ap-9531-0270a84680e7
+OrderQuery 129 , id = 627912917, Keys: 
+627912917 - address;
+No such Order 627912917
+Good-Saler all orders 45 , good id: al-b082-349b2fe8aa83  keys: 
+al-b082-349b2fe8aa83 - a_g_7032;
+--Not found goodId: al-b082-349b2fe8aa83
+SumOrderQuery 41 , good id = dd-96fb-99c6a6c2ec9b , key= a_b_1247
+--Not found goodId: dd-96fb-99c6a6c2ec9b
+TimePeriod Buyer's Orders 43 , buyer id = wx-98b5-f08d7978f2a8, time: 1482090413-1486672982
+--Not found buyerId: wx-98b5-f08d7978f2a8
+SumOrderQuery 42 , good id = dd-9d0d-ef2669412f69 , key= a_o_15325
+--Not found goodId: dd-9d0d-ef2669412f69
+TimePeriod Buyer's Orders 44 , buyer id = ap-80de-fd07dad1fb94, time: 1470178711-1478527529
+--Not found buyerId: ap-80de-fd07dad1fb94
+Good-Saler all orders 46 , good id: aye-943b-79eb597a8687  keys: 
+aye-943b-79eb597a8687 - a_g_28133;
+--Not found goodId: aye-943b-79eb597a8687
+265 queries  takes 12 ms ---

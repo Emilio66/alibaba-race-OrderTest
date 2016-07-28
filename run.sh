@@ -11,7 +11,7 @@ BIN=$PROJECT/bin
 
 cp -f target/order-system-impl-1.0.jar $JAR
 cd $PROJECT
-
+git pull
 find $SRC -name *.java > $SRC/sources.list
 
 #remove compiled classes file

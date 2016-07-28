@@ -97,9 +97,9 @@ public class Tester {
                                     break;
 
                             }
+                        }
                             long end = System.currentTimeMillis();
                             System.out.println(finalNum + " queries  takes " + (end - finalStart) + " ms ---");
-                        }
                     }
                 });
 
