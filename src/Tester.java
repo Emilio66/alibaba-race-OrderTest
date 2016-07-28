@@ -25,17 +25,19 @@ public class Tester {
         List<String> orderFiles = new ArrayList<String>();
         List<String> storePath = new ArrayList<String>();
 
-        buyerFiles.add("/home/hadoop/tb/buyer.0.0");
-        buyerFiles.add("/home/hadoop/tb/buyer.1.1");
-        goodFiles.add("/home/hadoop/tb/good.0.0");
-        goodFiles.add("/home/hadoop/tb/good.1.1");
-        goodFiles.add("/home/hadoop/tb/good.2.2");
-        orderFiles.add("/home/hadoop/tb/order.2.2");
-        orderFiles.add("/home/hadoop/tb/order.1.1");
-        orderFiles.add("/home/hadoop/tb/order.0.3");
-        orderFiles.add("/home/hadoop/tb/order.0.0");
+        buyerFiles.add("/home/hadoop/tb/disk1/buyer.0.0");//disk1
+        goodFiles.add("/home/hadoop/tb/disk1/good.0.0");
+        orderFiles.add("/home/hadoop/tb/disk1/order.0.3");
+        orderFiles.add("/home/hadoop/tb/disk1/order.0.0");
 
-        storePath.add("/home/hadoop/store/");
+        buyerFiles.add("/home/hadoop/tb/disk2/buyer.1.1");//disk2
+        goodFiles.add("/home/hadoop/tb/disk2/good.1.1");
+        orderFiles.add("/home/hadoop/tb/disk2/order.1.1");
+
+        goodFiles.add("/home/hadoop/tb/disk3/good.2.2");//disk3
+        orderFiles.add("/home/hadoop/tb/disk3/order.2.2");
+
+        storePath.add("/home/hadoop/store/disk1/");
 
         final OrderSystem os = new OrderSystemImpl();
         try {
