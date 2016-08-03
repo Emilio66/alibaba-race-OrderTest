@@ -10,18 +10,20 @@ import java.util.Collection;
 public class OrderQuery extends Query{
     public long orderId;
     public Collection<String> keys;
-    public OrderQuery(String orderId, String [] keys){
+
+    public OrderQuery(String orderId, String [] keys, String result){
         this.Type = Query.ORDER;
         this.orderId = Long.parseLong(orderId.trim());
         this.keys = Arrays.asList(keys);
+        this.result = result;
     }
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-
-        sb.append( ORDER_QUERY+" { orderId: "+orderId);
-        sb.append(", keys: "+keys+" }");
-        return sb.toString();
+        return "OrderQuery{" +
+                "orderId=" + orderId +
+                ", keys=" + keys +
+                ", result='" + result + '\'' +
+                '}';
     }
 }

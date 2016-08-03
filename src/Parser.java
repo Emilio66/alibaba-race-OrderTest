@@ -15,12 +15,12 @@ public class Parser {
     public static final String GOOD_QUERY = "CASE:QUERY_SALER_GOOD";
     public static final String BUYER_TSRANGE_QUERY = "CASE:QUERY_BUYER_TSRANGE";
 
-    private static final int BUFF_SIZE = 4096;
+    private static final int BUFF_SIZE = 40 << 20;
     private FastReader reader;
 
     public Parser(File file, long startPos) {
         this.reader = new FastReader(file, startPos, BUFF_SIZE);
-        System.out.println("New Parser: "+file.getName()+", start "+startPos);
+        System.out.println("New Parser: " + file.getName() + ", start " + startPos);
     }
 
     public Parser(File file) {
@@ -50,10 +50,14 @@ public class Parser {
                 String[] keyEntry = new String(reader.nextLine()).split(":");
                 String keys = keyEntry[1];
                 int start = keys.indexOf('[');
-                int end = keys.indexOf(']');
+                int end = keys.indexOf(']');//can be empty
                 String[] keyList = keys.substring(start + 1, end).split(",");
 
-                return new OrderQuery(orderId, keyList);
+                StringBuilder sb = new StringBuilder();
+                while ((data = reader.nextLine()) != null && data.length > 1) {
+                    sb.append(new String(data));
+                }
+                return new OrderQuery(orderId, keyList, sb.toString());
 
             } else if (SUM_QUERY.equals(line)) {
 
@@ -63,10 +67,14 @@ public class Parser {
                 String[] keyEntry = new String(reader.nextLine()).split(":");
                 String keys = keyEntry[1];
                 int start = keys.indexOf('[');
-                int end = keys.indexOf(']');
+                int end = keys.indexOf(']')-1; //cann't be null
                 String key = keys.substring(start + 1, end).trim();
 
-                return new SumQuery(goodId, key);
+                StringBuilder sb = new StringBuilder();
+                while ((data = reader.nextLine()) != null && data.length > 1) {
+                    sb.append(new String(data));
+                }
+                return new SumQuery(goodId, key, sb.toString());
 
             } else if (GOOD_QUERY.equals(line)) {
 
@@ -79,8 +87,11 @@ public class Parser {
                 int start = keys.indexOf('[');
                 int end = keys.indexOf(']');
                 String[] keyList = keys.substring(start + 1, end).split(",");
-
-                return new GoodQuery(goodId, keyList);
+                StringBuilder sb = new StringBuilder();
+                while ((data = reader.nextLine()) != null && data.length > 1) {
+                    sb.append(new String(data));
+                }
+                return new GoodQuery(goodId, keyList, sb.toString());
 
             } else if (BUYER_TSRANGE_QUERY.equals(line)) {
 
@@ -91,8 +102,11 @@ public class Parser {
                 String buyerId = buyerEntry[1].trim();
                 String startTime = startEntry[1];
                 String endTime = endEntry[1];
-
-                return new BuyerQuery(buyerId, startTime, endTime);
+                StringBuilder sb = new StringBuilder();
+                while ((data = reader.nextLine()) != null && data.length > 1) {
+                    sb.append(new String(data));
+                }
+                return new BuyerQuery(buyerId, startTime, endTime, sb.toString());
             }
 
         }
@@ -123,7 +137,7 @@ public class Parser {
     }
 
 
-    public List<Query> getAllQueries(){
+    public List<Query> getAllQueries() {
         List<Query> queryList = new ArrayList<Query>(1024);
         Query query;
 
@@ -134,18 +148,19 @@ public class Parser {
         return queryList;
     }
 
-    public static void main(String [] args){
-	long start = System.currentTimeMillis();
-	String filename="case.txt";
-	if(args.length > 0)
-		filename = args[0];
+    public static void main(String[] args) {
+        long start = System.currentTimeMillis();
+        //String filename = "case.txt";
+        String filename = "/home/hadoop/tb/fixed_case/case.0";
+        if (args.length > 0)
+            filename = args[0];
         List<Query> queryList = new Parser(new File(filename)).getAllQueries();
 
         int n = 0;
-        for (Query query : queryList){
-            System.out.println((n++)+" : "+query);
+        for (Query query : queryList) {
+            System.out.println((n++) + " : " + query);
         }
-	long end = System.currentTimeMillis();
-	System.out.println("Parsing case takes: "+(end - start) +" ms");
+        long end = System.currentTimeMillis();
+        System.out.println("Parsing case takes: " + (end - start) + " ms");
     }
 }

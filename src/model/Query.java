@@ -18,5 +18,12 @@ public abstract class Query {
     public static final String BUYER_TSRANGE_QUERY = "CASE:QUERY_BUYER_TSRANGE";
 
     public byte Type;
+    public String result;
 
+    @Override
+    public String toString() {
+        return
+                "result size: '" + (result.split("KV:").length-1) + '\'' +
+                '}';
+    }
 }

@@ -67,11 +67,12 @@ public class Tester {
                 }
                 final List<Query> queries = new Parser(caseFile).generateQueries(num);
 
+                //final List<Query> queries = new Parser(caseFile).getAllQueries();
                 start = System.currentTimeMillis();
 
                 //new a thread pool to execute query
                 ExecutorService executorService = Executors.newFixedThreadPool(3);
-                final int finalNum = num;
+                final int finalNum = queries.size();
                 executorService.execute(new Runnable() {
                     @Override
                     public void run() {
@@ -81,19 +82,23 @@ public class Tester {
 
                                 case Query.ORDER:
                                     os.queryOrder(((OrderQuery) query).orderId, ((OrderQuery) query).keys);
+                                    System.out.println((OrderQuery) query);
                                     break;
 
                                 case Query.GOOD:
                                     //query saler's good info, saler-good is unique, no need for saler id
                                     os.queryOrdersBySaler("", ((GoodQuery) query).goodId, ((GoodQuery) query).keys);
+                                    System.out.println((GoodQuery)query);
                                     break;
 
                                 case Query.BUYER:
                                     os.queryOrdersByBuyer(((BuyerQuery) query).startTime, ((BuyerQuery) query).endTime,
                                             ((BuyerQuery) query).buyerId);
+                                    System.out.println((BuyerQuery)query);
                                     break;
                                 case Query.SUM:
                                     os.sumOrdersByGood(((SumQuery) query).goodId, ((SumQuery) query).key);
+                                    System.out.println((SumQuery)query);
                                     break;
 
                             }

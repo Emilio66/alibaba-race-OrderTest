@@ -11,20 +11,30 @@ public class GoodQuery extends Query{
     public String salerId; //pointless
     public Collection<String> keys;
 
-    public GoodQuery(String goodId, String[] keys){
+    public GoodQuery(String goodId, String[] keys, String result){
         this.Type = Query.GOOD;
         this.goodId = goodId;
         this.keys = Arrays.asList(keys);
         this.salerId = "";
+        this.result = result;
     }
 
-
     @Override
+    public String toString() {
+        return "GoodQuery{" +
+                "goodId='" + goodId + '\'' +
+                ", salerId='" + salerId + '\'' +
+                ", keys=" + keys +
+                " " + super.toString();
+    }
+
+    /*@Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
         sb.append( GOOD_QUERY+" { goodId: "+goodId);
         sb.append(", keys: "+keys+" }");
+        sb.append("")
         return sb.toString();
-    }
+    }*/
 }
