@@ -87,18 +87,18 @@ public class Tester {
 
                                 case Query.GOOD:
                                     //query saler's good info, saler-good is unique, no need for saler id
-                                    os.queryOrdersBySaler("", ((GoodQuery) query).goodId, ((GoodQuery) query).keys);
-                                    System.out.println((GoodQuery)query);
+                                    //os.queryOrdersBySaler("", ((GoodQuery) query).goodId, ((GoodQuery) query).keys);
+                                   // System.out.println((GoodQuery)query);
                                     break;
 
                                 case Query.BUYER:
-                                    os.queryOrdersByBuyer(((BuyerQuery) query).startTime, ((BuyerQuery) query).endTime,
-                                            ((BuyerQuery) query).buyerId);
-                                    System.out.println((BuyerQuery)query);
+                                    //os.queryOrdersByBuyer(((BuyerQuery) query).startTime, ((BuyerQuery) query).endTime,
+                                      //      ((BuyerQuery) query).buyerId);
+                                    //System.out.println((BuyerQuery)query);
                                     break;
                                 case Query.SUM:
-                                    os.sumOrdersByGood(((SumQuery) query).goodId, ((SumQuery) query).key);
-                                    System.out.println((SumQuery)query);
+                                    //os.sumOrdersByGood(((SumQuery) query).goodId, ((SumQuery) query).key);
+                                   // System.out.println((SumQuery)query);
                                     break;
 
                             }

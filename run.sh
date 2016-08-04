@@ -1,6 +1,8 @@
 #get the newest code jar
-cd ~/singularity/Order
-git pull
+cd ~/singularity/real/Order
+rm /home/hadoop/store/disk1/*
+#cd ~/singularity/Order
+#git pull
 mvn package
 
 #compile all java files
@@ -24,5 +26,7 @@ javac -d $BIN/ -cp $JAR @$SRC/sources.list
 #java -cp $BIN:$JAR Parser /home/hadoop/tb/prerun_data/case.0 > screen.out
 #run project as a background process
 #nohup java -cp $BIN:$JAR Tester /home/hadoop/tb/prerun_data/case.0 &
-java -cp $BIN:$JAR Tester /home/hadoop/tb/prerun_data/case.0 265 > std.out
+#java -cp $BIN:$JAR Parser
+#java -cp $BIN:$JAR Tester /home/hadoop/tb/prerun_data/case.0 265 > std.out
+java -cp $BIN:$JAR Tester /home/hadoop/tb/fixed_case/case.0 2650 > std.out
 echo "program running log is writting into std.out ..."
